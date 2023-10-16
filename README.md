@@ -1,6 +1,10 @@
 
 <p align="center">
+<<<<<<< HEAD
   <img src="/assets/Logo.png width=83px height=83px" alt="GDSC ABESIT Logo">
+=======
+  <img src="/assets/Logo.png width=60% height=60%" alt="GDSC ABESIT Logo">
+>>>>>>> 6b5c966996010323262034c4a0317bb9f89d39db
 </p>
 
 # Google Developer Student Clubs (GDSC) at ABESIT
