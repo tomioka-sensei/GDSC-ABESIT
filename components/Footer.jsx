@@ -14,11 +14,11 @@ const Footer = () => {
                     <p className='text-xs font-semibold'>Keep In Touch</p>
                     <div className='flex justify-center items-center gap-3 text-xl text-gray-700'>
                         <Link href="#" className='transition hover:scale-105 hover:text-blue-500'><FaFacebook /></Link>
-                        <Link href="#" className='transition hover:scale-105 hover:text-purple-500'><FaInstagram /></Link>
-                        <Link href="#" className='transition hover:scale-105 hover:text-blue-400'><FaTwitter /></Link>
-                        <Link href="#" className='transition hover:scale-105 hover:text-blue-700'><FaLinkedinIn /></Link>
+                        <Link href="https://instagram.com/gdscabesit" className='transition hover:scale-105 hover:text-purple-500'><FaInstagram /></Link>
+                        <Link href="https://x.com/gdscabesit" className='transition hover:scale-105 hover:text-blue-400'><FaTwitter /></Link>
+                        <Link href="https://www.linkedin.com/company/dscabesit/mycompany/" className='transition hover:scale-105 hover:text-blue-700'><FaLinkedinIn /></Link>
                         <Link href="#" className='transition hover:scale-105 hover:text-red-500'><FaYoutube /></Link>
-                        <Link href="#" className='transition hover:scale-105 hover:text-gray-500'><FaGithub /></Link>
+                        <Link href="https://github.com/gdsc-abesit" className='transition hover:scale-105 hover:text-gray-500'><FaGithub /></Link>
                     </div>
                     <p>Email us: <a className='text-blue-600 hover:underline' href='mailto:dsc.abesit@gmail.com'>dsc.abesit@gmail.com</a></p>
                 </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <div className='mb-3'><Link className='font-bold' href="#">ABOUT</Link></div>
                         <div><Link className='' href="#">GDG Noida</Link></div>
                         <div><Link className='font-light' href="#">Google Developers Group</Link></div>
-                        <div><Link className='font-light' href="#">Meet the Team</Link></div>
+                        <div><Link className='font-light' href="https://gdsc-abesit.vercel.app/team">Meet the Team</Link></div>
                     </div>
                     <div>
                         <div className='mb-3'><Link className='font-bold' href="#">ABOUT GDSC ABESIT</Link></div>
