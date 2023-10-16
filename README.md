@@ -19,11 +19,6 @@ We welcome all students who are passionate about technology to get involved with
 
 - Follow us on [Twitter](https://twitter.com/gdscabesit) for the latest updates and tech news.
 
-## Resources
-
-
-## Community
-
 ## Contributing
 
 We encourage contributions from the community. Whether it's fixing a bug, adding a new feature, or improving documentation, your input is valuable. Please read our [Contribution Guidelines](CONTRIBUTING.md) to get started.
@@ -35,11 +30,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Feel free to reach out to us if you have any questions or ideas. We're excited to have you as part of the GDSC ABESIT community! 😊
-
-  _____ _                 _     __   __
- |_   _| |__   __ _ _ __ | | __ \ \ / /__  _   _
-   | | | '_ \ / _` | '_ \| |/ /  \ V / _ \| | | |
-   | | | | | | (_| | | | |   <    | | (_) | |_| |
-   |_| |_| |_|\__,_|_| |_|_|\_\   |_|\___/ \__,_|
-
-'''
