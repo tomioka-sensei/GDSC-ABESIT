@@ -18,7 +18,7 @@ function Hero() {
             className="mx-auto max-w-2xl text-center cursor-default pb-60 z-10"
           >
             <Image src={Logo} width={200} height={200} alt="Cover Picture" className='mx-auto' />
-            <h1 className="select-none text-3xl font-extrabold sm:text-5xl">
+            <h1 className="select-none text-3xl font-extrabold sm:text-5xl text-gray-100">
               Google Developer Student Club ABESIT </h1>
           </motion.div>
         </div>
