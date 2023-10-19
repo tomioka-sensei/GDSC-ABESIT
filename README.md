@@ -22,6 +22,12 @@ We welcome all students who are passionate about technology to get involved with
 
 We encourage contributions from the community. Whether it's fixing a bug, adding a new feature, or improving documentation, your input is valuable. Please read our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
+## Hacktoberfest
+
+Here's an extensive 2 minute video on how to make your first pull request with GDSC-ABESIT.
+
+https://github.com/IronicDeGawd/GDSC-ABESIT/assets/91710612/25513a68-e5dd-4fba-b573-4749caf6be20
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
