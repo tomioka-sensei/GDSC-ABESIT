@@ -323,16 +323,15 @@ function Contributors() {
            desc: "Nerd"
         },
 
-    // Use this template below
-    // {
-    //     id: ,
-    //     name: "",
-    //     img: "",
-    //     role: "",
-    //     social1: "",
-    //     social2: "",
-    //     desc: ""
-    //   },
+    {
+        id: 2202900100004,
+        name: "Aayush chauhan",
+        img: "https://avatars.githubusercontent.com/u/140552699?s=400&u=e009cde3231a7f19cbc7b009ece9bc9913139e56&v=4",
+        role: "Contributor",
+        social1: "https://www.linkedin.com/in/aayush-chauhan-9b8182238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        social2: "",
+        desc: "web developer"
+      },
   ];
 
 
