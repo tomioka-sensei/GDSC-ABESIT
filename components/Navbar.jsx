@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "@/assets/Logo.png";
+import LOGO from "@/assets/GDSC-ABES-LOGO.png";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
 
@@ -22,8 +22,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-1">
           <Link href="/">
             <div className="flex items-center">
-              <Image src={Logo} alt="logo" width={60} />
-              <h2 className="text-lg md:text-xl ml-2 font-semibold">GDSC</h2>
+              <Image src={LOGO} alt="logo" width={130} />
+              
             </div>
           </Link>
 
