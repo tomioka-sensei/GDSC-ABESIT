@@ -45,7 +45,7 @@ function Contributors() {
     {
       id: 147,
       name: "Vikash Kumar",
-      img: "https://github.com/1l0/identicon/blob/master/example/identicons/default.png?raw=true",
+      img: "https://github.com/Vikash-Rautela/PortfolioF/blob/master/src/assets/imageself.jpeg?raw=true",
       role: "Contributor",
       social1: "https://twitter.com/vikash-rautela",
       social2: "https://github.com/Vikash-Rautela",
@@ -81,7 +81,7 @@ function Contributors() {
     {
       id: 2002900100107,
       name: "Prakhar Sharma",
-      img: "https://github.com/1l0/identicon/blob/master/example/identicons/normal_white.png?raw=true",
+      img: "https://media.licdn.com/dms/image/D4D35AQHgWi8m7f6mhg/profile-framedphoto-shrink_200_200/0/1694496829155?e=1697454000&v=beta&t=4oN4nz1IDv_IYDv9A7lTN8UcfsvjqqYOjCm_CRCcQt8",
       role: "contributer",
       social1: "www.linkedin.com/in/prakhar-sharma-96a831272",
       social2: "",
@@ -162,7 +162,7 @@ function Contributors() {
     {
       id: 2202901520184,
       name: "vansh giri",
-      img: "https://github.com/1l0/identicon/blob/master/example/identicons/rand1_white.png?raw=true",
+      img: "https://photos.fife.usercontent.google.com/pw/ADCreHcth-T82S-rDG9bXZKw3lRXIru3e5SFaTwKOutQq5RFvHG3g3tNmFAi=w164-h219-no?authuser=0",
       role: "App Development Contributor",
       social1: "https://www.linkedin.com/in/vansh-giri-b8565b295/",
       social2: "https://github.com/",
@@ -225,7 +225,7 @@ function Contributors() {
     {
       id: 197,
       name: "Yash Kaushik",
-      img: "https://media.licdn.com/dms/image/D4D03AQEBT59ZoxUSKw/profile-displayphoto-shrink_800_800/0/1690366092081?e=1703116800&v=beta&t=MqjVuyJUttYrXCmTyl68RcvgzBtjXgf6vYIBf9kJIC8",
+      img: "",
       role: "Contributor",
       social1: "https://www.linkedin.com/in/yash-kaushik-45b200258",
       social2: "",
@@ -336,7 +336,7 @@ function Contributors() {
     },
   ];
 
-  const [LoadMoreValue, setLoadMoreValue] = useState(5);
+  const [LoadMoreValue, setLoadMoreValue] = useState(10);
   // Do not touch this return function guys!(ㆆ_ㆆ)
   // Bahaut mehnat se banaya hai yaar. Upar jaao wapis （*＾-＾*）
   // sorry bro just update it
@@ -415,10 +415,10 @@ function Contributors() {
           <div className="flex justify-center items-center text-black  box-border lg:pb-20 md:pb-24 pb-16">
             <button
               className={`mb-2 font-semibold leading-5 text-blue-500 bg-blue-100 w-fit p-3 rounded hover:bg-gray-500 hover:text-white transition-colors duration-500 ease-in-out ${
-                LoadMoreValue === 45 && ` opacity-50 cursor-not-allowed`
+                LoadMoreValue === 40 && ` opacity-50 cursor-not-allowed`
               }`}
               onClick={() => {
-                if (LoadMoreValue < 45) {
+                if (LoadMoreValue < 40) {
                   setLoadMoreValue(LoadMoreValue + 10);
                 }
               }}
