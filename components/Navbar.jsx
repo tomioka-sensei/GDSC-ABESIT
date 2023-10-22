@@ -23,13 +23,12 @@ const Navbar = () => {
           <Link href="/">
             <div className="flex items-center">
               <Image src={LOGO} alt="logo" width={130} />
-              
             </div>
           </Link>
 
           <div className="md:hidden">
             <button
-              className="mobile-menu-button"
+              className={`mobile-menu-button transform transition-transform hover:scale-105 focus:outline-none`}
               onClick={toggleMenu}
               aria-label="Toggle Menu"
             >
@@ -67,22 +66,29 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul
-            className={` md:flex md:items-center md:gap-8 text-base font-medium md:ml-4 hidden`}
-          >
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/">Event</Link></li>
-            <li><Link href="/">Project</Link></li>
-            <li><Link href="/team">Team</Link></li>
-            <li><Link href="/Contributors">Contributors</Link></li>
+          <ul className={`md:flex md:items-center md:gap-8 text-base font-medium md:ml-4 hidden`}>
+            <li className={`button hover:scale-105`} onMouseEnter={() => {}} onMouseLeave={() => {}}>
+              <Link href="/">Home</Link>
+            </li>
+            <li className={`button hover:scale-105`} onMouseEnter={() => {}} onMouseLeave={() => {}}>
+              <Link href="/">Event</Link>
+            </li>
+            <li className={`button hover:scale-105`} onMouseEnter={() => {}} onMouseLeave={() => {}}>
+              <Link href="/">Project</Link>
+            </li>
+            <li className={`button hover:scale-105`} onMouseEnter={() => {}} onMouseLeave={() => {}}>
+              <Link href="/team">Team</Link>
+            </li>
+            <li className={`button hover:scale-105`} onMouseEnter={() => {}} onMouseLeave={() => {}}>
+              <Link href="/Contributors">Contributors</Link>
+            </li>
           </ul>
 
-          
           <ul
-              className={`${
-                isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
-              } absolute top-full left-0 right-0 md:hidden transition-all duration-300 transform origin-top ease-in-out bg-white bg-opacity-90`}
-            >
+            className={`${
+              isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+            } absolute top-full left-0 right-0 md:hidden transition-all duration-300 transform origin-top ease-in-out bg-white bg-opacity-90`}
+          >
             <li className=" border-y-2 pl-10 py-2"><Link href="/">Home</Link></li>
             <li className=" border-b-2 pl-10 py-2"><Link href="/">Event</Link></li>
             <li className=" border-b-2 pl-10 py-2"><Link href="/">Project</Link></li>
