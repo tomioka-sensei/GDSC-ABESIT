@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: components/Contributors.jsx
+  checksum: cb83d7b29cfd544f26228bd0ee70e99fcb7bb8211be41889fd1d6bf4f1b92ddb
+version: ""
