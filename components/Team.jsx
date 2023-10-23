@@ -93,7 +93,7 @@ const TeamSection = () => {
                 <div className='flex flex-wrap justify-evenly items-center mt-12'>
                     {teamData && teamData.map((member) => {
                         return (
-                            <div key={member.id} className="flex flex-col  justify-center items-center gap-4 w-1/4 mb-8">
+                            <div key={member.id} className="flex flex-col justify-center items-center gap-4 w-full sm:w-1/2 md:w-1/4 mb-8">
                                 <div>
                                     <img className='rounded-full border-8 border-yellow-400 aspect-square' src={member.img} alt={member.name} width={175} />
                                 </div>
