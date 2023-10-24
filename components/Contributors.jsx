@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
 function Contributors() {
-
   //   Contribute here guys!! Idhar udhar mat nikal jaana (ㆆ_ㆆ)
+
   const ContributorData = [
     {
       id: 1,
@@ -13,7 +13,7 @@ function Contributors() {
       role: "App Developer",
       social1: "https://twitter.com/chiragchandra25",
       social2: "https://github.com/Chiragramesh25",
-      desc: "Funniest guy in the room (that's what he said)"
+      desc: "Funniest guy in the room (that's what he said)",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ function Contributors() {
       role: "Open Source",
       social1: "https://twitter.com/Ishaan2053",
       social2: "https://github.com/Ishaan2053",
-      desc: "Secretive even when all he has to hide is a 10 ki chocolate"
+      desc: "Secretive even when all he has to hide is a 10 ki chocolate",
     },
     {
       id: 3,
@@ -54,11 +54,11 @@ function Contributors() {
     {
       id: 2102901550041,
       name: "Vansh Goel",
-      img : "https://github.com/vanshgoel18.png",
+      img: "https://github.com/vanshgoel18.png",
       role: "Contributor",
-      social1:"https://www.linkedin.com/in/vansh-goel-100928221/",
-      social2:"https://twitter.com/GoelVansh_19",
-      desc : " ",
+      social1: "https://www.linkedin.com/in/vansh-goel-100928221/",
+      social2: "https://twitter.com/GoelVansh_19",
+      desc: " ",
     },
     {
       id: 5,
@@ -67,88 +67,88 @@ function Contributors() {
       role: "App Development Contributor",
       social1: "https://twitter.com/KabirShukl",
       social2: "https://www.linkedin.com/in/kabir-shukla-396247233/",
-      desc: "Aspiring Jim Halpert"
+      desc: "Aspiring Jim Halpert",
     },
     {
-       id: 2102900100069,
-       name: "Khushi Sharma",
-       img: "https://media.licdn.com/dms/image/D5603AQG-xgh_HxEbQg/profile-displayphoto-shrink_800_800/0/1685025455265?e=1702512000&v=beta&t=lHmvIQr7UVogVEfzE4Wh-hI_edcLtPNJcOULXvx28TA",
-       role: "Web Developer",
-       social1: "https://twitter.com/ikhushisharmaa",
-       social2: "https://www.linkedin.com/in/khushisharma4/",
-       desc: "Always laughing at lame jokes, hehe."
-     },
-    {
-        id:2002900100107 ,
-        name: "Prakhar Sharma",
-        img: "https://media.licdn.com/dms/image/D4D35AQHgWi8m7f6mhg/profile-framedphoto-shrink_200_200/0/1694496829155?e=1697454000&v=beta&t=4oN4nz1IDv_IYDv9A7lTN8UcfsvjqqYOjCm_CRCcQt8",
-        role: "contributer",
-        social1: "www.linkedin.com/in/prakhar-sharma-96a831272",
-        social2: "",
-        desc: "Java developer,learner"
+      id: 2102900100069,
+      name: "Khushi Sharma",
+      img: "https://media.licdn.com/dms/image/D5603AQG-xgh_HxEbQg/profile-displayphoto-shrink_800_800/0/1685025455265?e=1702512000&v=beta&t=lHmvIQr7UVogVEfzE4Wh-hI_edcLtPNJcOULXvx28TA",
+      role: "Web Developer",
+      social1: "https://twitter.com/ikhushisharmaa",
+      social2: "https://www.linkedin.com/in/khushisharma4/",
+      desc: "Always laughing at lame jokes, hehe.",
     },
-      {
-        id: "2021CSAi034",
-        name: "Prerit Saxena",
-        img: "https://avatars.githubusercontent.com/u/112962509?s=400&u=b3fd6fe26d13da948a5b0191d7aeca436baa4d5c&v=4",
-        role: "Full Stack Web Developer",
-        social1: "https://www.linkedin.com/in/prerit-saxena-930774229",
-        social2: "https://github.com/PreritSaxena",
-        desc: "Don't Get Motivated , get obsessed  "
-      },
     {
-          id: 2102900100080 ,
-          name: "Manish Keshwani",
-          img: "https://avatars.githubusercontent.com/u/113196913?v=4",
-          role: "Web Developer",
-          social1: "https://twitter.com/keshwani2002",
-          social2: "https://www.linkedin.com/in/manish-kumar-keshwani-052b61243/",
-          desc: "Once a nerd, always a nerd."
-        },
+      id: 2002900100107,
+      name: "Prakhar Sharma",
+      img: "https://media.licdn.com/dms/image/D4D35AQHgWi8m7f6mhg/profile-framedphoto-shrink_200_200/0/1694496829155?e=1697454000&v=beta&t=4oN4nz1IDv_IYDv9A7lTN8UcfsvjqqYOjCm_CRCcQt8",
+      role: "contributer",
+      social1: "www.linkedin.com/in/prakhar-sharma-96a831272",
+      social2: "",
+      desc: "Java developer,learner",
+    },
+    {
+      id: "2021CSAi034",
+      name: "Prerit Saxena",
+      img: "https://avatars.githubusercontent.com/u/112962509?s=400&u=b3fd6fe26d13da948a5b0191d7aeca436baa4d5c&v=4",
+      role: "Full Stack Web Developer",
+      social1: "https://www.linkedin.com/in/prerit-saxena-930774229",
+      social2: "https://github.com/PreritSaxena",
+      desc: "Don't Get Motivated , get obsessed  ",
+    },
+    {
+      id: 2102900100080,
+      name: "Manish Keshwani",
+      img: "https://avatars.githubusercontent.com/u/113196913?v=4",
+      role: "Web Developer",
+      social1: "https://twitter.com/keshwani2002",
+      social2: "https://www.linkedin.com/in/manish-kumar-keshwani-052b61243/",
+      desc: "Once a nerd, always a nerd.",
+    },
     {
       id: 2202901540039,
-          name: "Ashiya Rana",
-          img: "https://github.com/Ashiyarana12.png",
-          role: "Contributor",
-          social1: "https://www.linkedin.com/in/ashiya-rana-8ba667251/",
-          social2: "https://github.com/Ashiyarana12",
-          desc: "just testing "
+      name: "Ashiya Rana",
+      img: "https://github.com/Ashiyarana12.png",
+      role: "Contributor",
+      social1: "https://www.linkedin.com/in/ashiya-rana-8ba667251/",
+      social2: "https://github.com/Ashiyarana12",
+      desc: "just testing ",
     },
     {
-    id: 2202900100138,
-        name: "Pratyush Mathur",
-        img: "https://github.com/Shoto0095.png",
-        role: "Contributor",
-        social1: "https://www.linkedin.com/in/pratyush-mathur-35a1a2251/",
-        social2: "https://github.com/Shoto0095",
-        desc: "Just testing things ;) "
+      id: 2202900100138,
+      name: "Pratyush Mathur",
+      img: "https://github.com/Shoto0095.png",
+      role: "Contributor",
+      social1: "https://www.linkedin.com/in/pratyush-mathur-35a1a2251/",
+      social2: "https://github.com/Shoto0095",
+      desc: "Just testing things ;) ",
     },
-     {
+    {
       id: 2202900100165,
       name: "Shirshak Kumar",
       img: "https://github.com/shirshakk.png",
       role: "App Development Contributor",
       social1: "https://twitter.com/kshirshak76",
       social2: "https://www.linkedin.com/in/shirshak-kumar-5ba790253",
-      desc: "Aspiring Jim Halpert"
+      desc: "Aspiring Jim Halpert",
     },
-     {
-        id: "2202900100070" ,
-        name: "Daksh Agarwal",
-        img: "https://avatars.githubusercontent.com/u/133400136?v=4",
-        role: "Contributor",
-        social1: "https://www.linkedin.com/in/dakshagarwal5/",
-        social2: "https://twitter.com/Dakshagarwal_5",
-        desc: ""
-      },
     {
-      id:2202900100091,
+      id: "2202900100070",
+      name: "Daksh Agarwal",
+      img: "https://avatars.githubusercontent.com/u/133400136?v=4",
+      role: "Contributor",
+      social1: "https://www.linkedin.com/in/dakshagarwal5/",
+      social2: "https://twitter.com/Dakshagarwal_5",
+      desc: "",
+    },
+    {
+      id: 2202900100091,
       name: "Himanshi Rana",
       img: "https://avatars.githubusercontent.com/u/139847752?v=4",
       role: "Contributor",
       social1: "https://www.linkedin.com/in/himanshi-rana-b4b9b9251/",
       social2: "https://github.com/himanshirana2403",
-      desc: ""
+      desc: "",
     },
     {
       id: 2202901520127,
@@ -157,185 +157,187 @@ function Contributors() {
       role: "Contributor",
       social1: "https://www.linkedin.com/in/pulkit-gahlot-399187251/",
       social2: "https://twitter.com/Pulkit_1527",
-      desc: "Maybe/Maybe not :p"
+      desc: "Maybe/Maybe not :p",
     },
     {
-      id:2202901520184,
-      name:"vansh giri",
-      img:"https://photos.fife.usercontent.google.com/pw/ADCreHcth-T82S-rDG9bXZKw3lRXIru3e5SFaTwKOutQq5RFvHG3g3tNmFAi=w164-h219-no?authuser=0",
-      role:"App Development Contributor",
-      social1:"https://www.linkedin.com/in/vansh-giri-b8565b295/",
-      social2:"https://github.com/",
-      desc:"coding",
+      id: 2202901520184,
+      name: "vansh giri",
+      img: "https://photos.fife.usercontent.google.com/pw/ADCreHcth-T82S-rDG9bXZKw3lRXIru3e5SFaTwKOutQq5RFvHG3g3tNmFAi=w164-h219-no?authuser=0",
+      role: "App Development Contributor",
+      social1: "https://www.linkedin.com/in/vansh-giri-b8565b295/",
+      social2: "https://github.com/",
+      desc: "coding",
     },
     {
-        id: 2102901550042,
-        name: "Vishal kumar Pandey",
-        img: "https://github.com/VishaaLPandey.png",
-        role: "Contributor",
-        social1: "https://twitter.com/pandeytwt?t=UlEC380rSrTVri0IM6otLw&s=09",
-        social2: "https://github.com/VishaaLPandey",
-        desc: "A Curious guy who is everywhere in Tech and Sports."
+      id: 2102901550042,
+      name: "Vishal kumar Pandey",
+      img: "https://github.com/VishaaLPandey.png",
+      role: "Contributor",
+      social1: "https://twitter.com/pandeytwt?t=UlEC380rSrTVri0IM6otLw&s=09",
+      social2: "https://github.com/VishaaLPandey",
+      desc: "A Curious guy who is everywhere in Tech and Sports.",
     },
     {
-        id: 2202900100147,
-        name: "Rishikesh Gupta",
-        img: "https://avatars.githubusercontent.com/u/112187328?v=4",
-        role: "Contributor",
-        social1: "https://www.instagram.com/pranjalll_x_beyonder/",
-        social2: "https://www.youtube.com/@beyonder001",
-        desc: "yup buddy!! all good ?"
-      },
-    {
-        id: "22029",
-        name: "Amit Verma",
-        img: "https://github.com/amitverma147.png",
-        role: "Developer",
-        social1: "https://twitter.com/Amit_v6",
-        social2: "https://www.instagram.com/amitv.147/",
-        desc: "Memes Lover!!"
-      },
-    {
-        id: 2102901540039,
-        name: "chirag sharma",
-        img: "https://media.licdn.com/dms/image/D5603AQGE3RWCobTtcA/profile-displayphoto-shrink_800_800/0/1674494672539?e=1702512000&v=beta&t=FBDX2pqcQsKCyZ5fHpjUM8jB2vSSCvrlnt_gB1INwn4",
-        role: "open source contributor",
-        social1: "https://twitter.com/itschirag24",
-        social2: "https://github.com/24chirag",
-        desc: "Frontend  developer as well as Machine learning enthusiast"
+      id: 2202900100147,
+      name: "Rishikesh Gupta",
+      img: "https://avatars.githubusercontent.com/u/112187328?v=4",
+      role: "Contributor",
+      social1: "https://www.instagram.com/pranjalll_x_beyonder/",
+      social2: "https://www.youtube.com/@beyonder001",
+      desc: "yup buddy!! all good ?",
     },
     {
-        id: 2202900100071,
-        name: "Darshil Kumar",
-        img: "https://avatars.githubusercontent.com/u/91634586?v=4",
-        role: "Contributor",
-        social1: "https://twitter.com/Darshil88505969",
-        social2: "https://www.linkedin.com/in/not-darshil-kumar/",
-        desc: "Life is too short for bad vibes."
-      },
-      {
+      id: "22029",
+      name: "Amit Verma",
+      img: "https://github.com/amitverma147.png",
+      role: "Developer",
+      social1: "https://twitter.com/Amit_v6",
+      social2: "https://www.instagram.com/amitv.147/",
+      desc: "Memes Lover!!",
+    },
+    {
+      id: 2102901540039,
+      name: "chirag sharma",
+      img: "https://media.licdn.com/dms/image/D5603AQGE3RWCobTtcA/profile-displayphoto-shrink_800_800/0/1674494672539?e=1702512000&v=beta&t=FBDX2pqcQsKCyZ5fHpjUM8jB2vSSCvrlnt_gB1INwn4",
+      role: "open source contributor",
+      social1: "https://twitter.com/itschirag24",
+      social2: "https://github.com/24chirag",
+      desc: "Frontend  developer as well as Machine learning enthusiast",
+    },
+    {
+      id: 2202900100071,
+      name: "Darshil Kumar",
+      img: "https://avatars.githubusercontent.com/u/91634586?v=4",
+      role: "Contributor",
+      social1: "https://twitter.com/Darshil88505969",
+      social2: "https://www.linkedin.com/in/not-darshil-kumar/",
+      desc: "Life is too short for bad vibes.",
+    },
+    {
       id: 2202900100009,
       name: "Abhinav Gupta",
       img: "https://avatars.githubusercontent.com/u/132747736?v=4",
       role: "Contributor",
       social1: "https://linktr.ee/abhinav_cse",
       social2: "https://www.linkedin.com/in/abhinav-gupta-cs/",
-      desc: "You are the CSS to my HTML"
+      desc: "You are the CSS to my HTML",
     },
     {
-         id: 197 ,
-         name: "Yash Kaushik",
-         img: "",
-         role: "Contributor",
-         social1: "https://www.linkedin.com/in/yash-kaushik-45b200258",
-         social2: "",
-         desc: ""
-       },
-     {
-        id:2202901550044 ,
-        name: "Maanvi Tyagi",
-        img: "https://avatars.githubusercontent.com/u/123249667?v=4",
-         role: "Contributer",
-        social1: "https://github.com/Maanvi025",
-         social2: "https://www.linkedin.com/in/maanvi-tyagi-70374224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-         desc: "inquisitive worm"
-      },
- {
+      id: 197,
+      name: "Yash Kaushik",
+      img: "",
+      role: "Contributor",
+      social1: "https://www.linkedin.com/in/yash-kaushik-45b200258",
+      social2: "",
+      desc: "",
+    },
+    {
+      id: 2202901550044,
+      name: "Maanvi Tyagi",
+      img: "https://avatars.githubusercontent.com/u/123249667?v=4",
+      role: "Contributer",
+      social1: "https://github.com/Maanvi025",
+      social2:
+        "https://www.linkedin.com/in/maanvi-tyagi-70374224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+      desc: "inquisitive worm",
+    },
+    {
       id: 2202900100115,
       name: "Mayank Kumar",
       img: "https://avatars.githubusercontent.com/u/126708321?v=4",
       role: "Contributor",
       social1: "https://x.com/mayk7983?t=FttankGMJoph69oxY6QPbw&s=09",
-      social2: "https://www.linkedin.com/in/mayank-kumar-773602251",  
+      social2: "https://www.linkedin.com/in/mayank-kumar-773602251",
     },
- {
+    {
       id: 6,
       name: "Harshit",
       img: "https://avatars.githubusercontent.com/u/110588667?v=4.png",
       role: "Contributor",
       social1: "https://twitter.com/Harshit_0553",
       social2: "https://www.linkedin.com/in/harshit-keshari-932435239/",
-      desc: "Aspiring Jim Halpert"
+      desc: "Aspiring Jim Halpert",
     },
-      
+
     {
-        id: 2202900100003,
-        name: "Aayush Chauhan",
-        img: "https://github.com/aayush-506.png",
-        role: "Web  Development Contributor",
-        social1: "https://twitter.com/aayush_506?t=1J7JPDuky9Utt2PwYifX-A&s=08",
-        social2: "https://www.linkedin.com/in/aayush-chauhan-94556b246",
-        desc: "web3 learner "
-      },
-   {
+      id: 2202900100003,
+      name: "Aayush Chauhan",
+      img: "https://github.com/aayush-506.png",
+      role: "Web  Development Contributor",
+      social1: "https://twitter.com/aayush_506?t=1J7JPDuky9Utt2PwYifX-A&s=08",
+      social2: "https://www.linkedin.com/in/aayush-chauhan-94556b246",
+      desc: "web3 learner ",
+    },
+    {
       id: 2102901540084,
       name: "Rahul Sahani",
       img: "https://media.licdn.com/dms/image/D4D03AQGiFErUwRyFOQ/profile-displayphoto-shrink_400_400/0/1671350352942?e=1702512000&v=beta&t=4Z9i4EdT5R9PKhuhmNRMcXVEE1NXBa7ku94EzZxaQc4",
       role: "Open Source Contributor",
       social1: "https://github.com/Rahulsahani01",
       social2: "https://www.linkedin.com/in/rahul-shahni-419a38250",
-      desc: "its not over when you lose, its over when you give up. "
+      desc: "its not over when you lose, its over when you give up. ",
     },
     {
-        id: 511729,
-        name: "Prateek Sinha",
-        img: "https://avatars.githubusercontent.com/u/111572443?v=4.png",
-        role: "Contributor",
-        social1: "https://x.com/hey_Patrickk?t=vKBQfObKBUzcFcPPHvOf0w&s=03",
-        social2: "www.linkedin.com/in/prateeksinha5100",
-        desc: "Learner"
-      },
-      // 
+      id: 511729,
+      name: "Prateek Sinha",
+      img: "https://avatars.githubusercontent.com/u/111572443?v=4.png",
+      role: "Contributor",
+      social1: "https://x.com/hey_Patrickk?t=vKBQfObKBUzcFcPPHvOf0w&s=03",
+      social2: "www.linkedin.com/in/prateeksinha5100",
+      desc: "Learner",
+    },
+    //
     {
-        id: 42069,
-        name: "Aditya Srivastava",
-        img: "https://github.com/IronicDeGawd.png",
-        role: "App Dev Team",
-        social1: "https://twitter.com/irony_aditya",
-        social2: "https://www.linkedin.com/in/aditya-srivastava-bb5008251/",
-        desc: "Nerdy ash, tinkering around"
-      },
-      {
-         id:2102901540085,
-         name: "Rajeev Verma",
-         img: "https://media.licdn.com/dms/image/D4D03AQHsuasDRTtJBw/profile-displayphoto-shrink_400_400/0/1690446052323?e=1702512000&v=beta&t=SIpdD64-6Y2UNo7gdoaWcgb25IAYoagNzUcbZ4YGWq8",
-        role: "https://twitter.com/rajeevverma8510",
-        social1: "https://twitter.com/rajeevverma8510",
-        social2: "https://www.linkedin.com/in/rajeev-verma-24665b230/",
-         desc: "Never Give Up is my lifelong moto"
-       },
-       {
-        id:2102900100185,
-        name: "Yuvraj Singh",
-        img: "https://avatars.githubusercontent.com/u/91334605?s=400&u=07e5f62da52fe8cda7ee0555bf173608e0ff2195&v=4",
-        role: "Contributor",
-        social1: "https://linkedin.com/in/yuvraj-singh-831540221",
-        social2: "https://github.com/yuvraj-0777",
-        desc: "Do everything you want whenever you get a chance"
-      },
-      {
-           id: 10069,
-           name: "Irony.Aditya",
-           img: "https://github.com/0xAditya-Test.png",
-           role: "Contributor",
-           social1: "https://github.com/0xAditya-Test",
-           social2: "",
-           desc: "Nerd"
-        },
+      id: 42069,
+      name: "Aditya Srivastava",
+      img: "https://github.com/IronicDeGawd.png",
+      role: "App Dev Team",
+      social1: "https://twitter.com/irony_aditya",
+      social2: "https://www.linkedin.com/in/aditya-srivastava-bb5008251/",
+      desc: "Nerdy ash, tinkering around",
+    },
+    {
+      id: 2102901540085,
+      name: "Rajeev Verma",
+      img: "https://media.licdn.com/dms/image/D4D03AQHsuasDRTtJBw/profile-displayphoto-shrink_400_400/0/1690446052323?e=1702512000&v=beta&t=SIpdD64-6Y2UNo7gdoaWcgb25IAYoagNzUcbZ4YGWq8",
+      role: "https://twitter.com/rajeevverma8510",
+      social1: "https://twitter.com/rajeevverma8510",
+      social2: "https://www.linkedin.com/in/rajeev-verma-24665b230/",
+      desc: "Never Give Up is my lifelong moto",
+    },
+    {
+      id: 2102900100185,
+      name: "Yuvraj Singh",
+      img: "https://avatars.githubusercontent.com/u/91334605?s=400&u=07e5f62da52fe8cda7ee0555bf173608e0ff2195&v=4",
+      role: "Contributor",
+      social1: "https://linkedin.com/in/yuvraj-singh-831540221",
+      social2: "https://github.com/yuvraj-0777",
+      desc: "Do everything you want whenever you get a chance",
+    },
+    {
+      id: 10069,
+      name: "Irony.Aditya",
+      img: "https://github.com/0xAditya-Test.png",
+      role: "Contributor",
+      social1: "https://github.com/0xAditya-Test",
+      social2: "",
+      desc: "Nerd",
+    },
 
     {
-        id: 2202900100004,
-        name: "Aayush chauhan",
-        img: "https://avatars.githubusercontent.com/u/140552699?s=400&u=e009cde3231a7f19cbc7b009ece9bc9913139e56&v=4",
-        role: "Contributor",
-        social1: "https://www.linkedin.com/in/aayush-chauhan-9b8182238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        social2: "",
-        desc: "web developer"
-      },
+      id: 2202900100004,
+      name: "Aayush chauhan",
+      img: "https://avatars.githubusercontent.com/u/140552699?s=400&u=e009cde3231a7f19cbc7b009ece9bc9913139e56&v=4",
+      role: "Contributor",
+      social1:
+        "https://www.linkedin.com/in/aayush-chauhan-9b8182238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      social2: "",
+      desc: "web developer",
+    },
   ];
 
-
-  // Do not touch this return function guys!(ㆆ_ㆆ) 
+  const [LoadMoreValue, setLoadMoreValue] = useState(10);
+  // Do not touch this return function guys!(ㆆ_ㆆ)
   // Bahaut mehnat se banaya hai yaar. Upar jaao wapis （*＾-＾*）
 return (
   <div className="bg-white w-full py-6">
@@ -409,7 +411,100 @@ return (
 );
 }
 
-
 // Bola tha na Upar jaao ( ˘︹˘ ) 
+// sorry bro just update it
+  console.log(ContributorData.length, LoadMoreValue);
+  return (
+    <div className="bg-white w-full py-6">
+      <section className="container px-6 mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="px-4 pb-16 pt-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900  sm:text-4xl md:mx-auto">
+                Our awesome{" "}
+                <span className="text-yellow-500">Contributors</span>
+              </h2>
+              <p className="text-base text-gray-700 md:text-lg">
+                The list of people who've successfully contributed with this
+                hands-on workshop. Get your name on GDSC's website too!
+              </p>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5"
+            >
+              {ContributorData &&
+                ContributorData.slice(0, LoadMoreValue).map((member) => {
+                  return (
+                    <div key={member.id}>
+                      <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                        <img
+                          className="object-cover w-full h-56 md:h-64 xl:h-80"
+                          src={member.img}
+                          alt={member.name}
+                        />
+
+                        <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                          <p className="mb-1 text-lg font-bold text-gray-100">
+                            {member.name}
+                          </p>
+                          <p className="mb-4 text-xs text-gray-100">
+                            {member.role}
+                          </p>
+                          <p className="mb-4 text-xs tracking-wide text-gray-400">
+                            {member.desc}
+                          </p>
+
+                          <div className="flex items-center justify-center space-x-3">
+                            <SocialIcon
+                              url={member.social1}
+                              target="_blank"
+                              style={{ height: 35, width: 35 }}
+                              bgColor="black"
+                            />
+
+                            <SocialIcon
+                              url={member.social2}
+                              target="_blank"
+                              style={{ height: 35, width: 35 }}
+                              bgColor="black"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+            </motion.div>
+          </div>
+          <div className="flex justify-center items-center text-black  box-border lg:pb-20 md:pb-24 pb-16">
+            <button
+              className={`mb-2 font-semibold leading-5 text-blue-500 bg-blue-100 w-fit p-3 rounded hover:bg-gray-500 hover:text-white transition-colors duration-500 ease-in-out ${
+                LoadMoreValue === 40 && ` opacity-50 cursor-not-allowed`
+              }`}
+              onClick={() => {
+                if (LoadMoreValue < 40) {
+                  setLoadMoreValue(LoadMoreValue + 10);
+                }
+              }}
+            >
+              Explore more contributors
+            </button>
+          </div>
+        </motion.div>
+      </section>
+    </div>
+  );
+}
+
+// Bola tha na Upar jaao ( ˘︹˘ )
 
 export default Contributors;
