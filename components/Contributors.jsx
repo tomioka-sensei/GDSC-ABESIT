@@ -339,80 +339,6 @@ function Contributors() {
   const [LoadMoreValue, setLoadMoreValue] = useState(10);
   // Do not touch this return function guys!(ㆆ_ㆆ)
   // Bahaut mehnat se banaya hai yaar. Upar jaao wapis （*＾-＾*）
-return (
-  <div className="bg-white w-full py-6">
-    <section className="container px-6 mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        <div className="px-4 pb-16 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-              Our awesome <span className="text-yellow-500">Contributors</span>
-            </h2>
-            <p className="text-base text-gray-700 md:text-lg">
-              The list of people who've successfully contributed with this
-              hands-on workshop. Get your name on GDSC's website too!
-            </p>
-          </div>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
-          >
-            {ContributorData.map((member) => (
-              <div key={member.id}>
-                <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg hover:shadow-2xl">
-                  <img
-                    className="object-cover w-full h-56 sm:h-64 md:h-80"
-                    src={member.img}
-                    alt={member.name}
-                  />
-                  <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                    <p className="mb-1 text-lg font-bold text-gray-100">
-                      {member.name}
-                    </p>
-                    <p className="mb-4 text-xs text-gray-100">{member.role}</p>
-                    <p className="mb-4 text-xs tracking-wide text-gray-400">
-                      {member.desc}
-                    </p>
-                    <div className="flex items-center justify-center space-x-3">
-                      <SocialIcon
-                        url={member.social1}
-                        target="_blank"
-                        style={{ height: 35, width: 35 }}
-                        bgColor="transparent"
-                        rel="noopener noreferrer"
-                        aria-label={`Visit ${member.name}'s Twitter profile`}
-                      />
-                      <SocialIcon
-                        url={member.social2}
-                        target="_blank"
-                        style={{ height: 35, width: 35 }}
-                        bgColor="transparent"
-                        rel="noopener noreferrer"
-                        aria-label={`Visit ${member.name}'s GitHub profile`}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </motion.div>
-    </section>
-  </div>
-);
-}
-
-// Bola tha na Upar jaao ( ˘︹˘ ) 
-// sorry bro just update it
   console.log(ContributorData.length, LoadMoreValue);
   return (
     <div className="bg-white w-full py-6">
@@ -505,6 +431,7 @@ return (
   );
 }
 
-// Bola tha na Upar jaao ( ˘︹˘ )
+// Bola tha na Upar jaao ( ˘︹˘ ) 
+// sorry bro just update it
 
 export default Contributors;
