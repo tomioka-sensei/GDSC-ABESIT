@@ -60,6 +60,16 @@ function Contributors() {
       social2: "https://twitter.com/GoelVansh_19",
       desc: " ",
     },
+     {
+        id:2202901550085,
+        name: "UTKARSH AGGARWAL",
+        img: "https://media.bio.site/sites/85a499a4-735f-4ae7-9c4d-9e39ae776352/WATaZCt82gYoKVB9xYwBGY.jpg",
+        role: "CONTRIBUTOR",
+        social1: "https://github.com/utkarshcse2026",
+        social2: "https://www.linkedin.com/in/utkarshcse26",
+       desc: "Aspiring Developer"
+      },
+
     {
       id: 5,
       name: "Kabir",
