@@ -423,7 +423,7 @@ function Contributors() {
                 }
               }}
             >
-              Explore incredible contributors
+              Explore more contributors
             </button>
           </div>
         </motion.div>
