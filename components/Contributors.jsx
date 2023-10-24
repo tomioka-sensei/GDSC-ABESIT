@@ -339,10 +339,9 @@ function Contributors() {
   const [LoadMoreValue, setLoadMoreValue] = useState(10);
   // Do not touch this return function guys!(ㆆ_ㆆ)
   // Bahaut mehnat se banaya hai yaar. Upar jaao wapis （*＾-＾*）
-  // sorry bro just update it
   console.log(ContributorData.length, LoadMoreValue);
   return (
-    <div className="bg-white w-full py-6">
+    <div className="bg-white w-full py-16 md:py-6">
       <section className="container px-6 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -432,6 +431,7 @@ function Contributors() {
   );
 }
 
-// Bola tha na Upar jaao ( ˘︹˘ )
+// Bola tha na Upar jaao ( ˘︹˘ ) 
+// sorry bro just update it
 
 export default Contributors;
