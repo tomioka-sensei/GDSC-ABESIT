@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import LOGO from "@/assets/GDSC-ABES-LOGO.png";
 import Link from "next/link";
+import gdsclogo from "@/assets/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +14,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-20 bg-opacity-90 bg-white backdrop-blur-sm shadow-md text-black">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between py-1">
-          <Link href="/">
+        <div className="flex items-center justify-between py-1 h-14 sm:h-20">
+          <Link href="/" class="transform scale-50 sm:scale-75">
             <div className="flex items-center">
-              <Image src={LOGO} alt="logo" width={130} />
+              <Image src={gdsclogo} alt="logo" width={130}/>
+              <h1 className="text-4xl font-bold text-gray-800 hidden sm:block p-4">ABESIT </h1>
             </div>
           </Link>
 
