@@ -88,19 +88,19 @@ const TeamSection = () => {
             <div className='w-4/5 mx-auto'>
                 <h2 className="text-3xl md:text-4xl font-bold mt-6">Team Member</h2>
                 <p className="text-base text-gray-700 md:text-lg w-3/4 mx-auto my-6">
-                    The list of people who're working to make this community amazing & welcoming.
+                    The list of people who are working to make this community amazing & welcoming.
                 </p>
-                <div className='flex flex-wrap justify-evenly items-center mt-12'>
+                <div className='flex flex-wrap justify-center items-stretch mt-12'>
                     {teamData && teamData.map((member) => {
                         return (
-                            <div key={member.id} className="flex flex-col justify-center items-center gap-4 w-full sm:w-1/2 md:w-1/4 mb-8">
+                            <div key={member.id} className="flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8">
                                 <div>
-                                    <img className='rounded-full border-8 border-yellow-400 aspect-square' src={member.img} alt={member.name} width={175} />
+                                    <img className='rounded-full border-4 border-yellow-400 aspect-square' src={member.img} alt={member.name} width={175} />
                                 </div>
-                                <div>
-                                    <h3 className='text-2xl font-semibold'>{member.name}</h3>
+                                <div className="mt-2 md:mt-4"> {/* Add margin for spacing */}
+                                    <h4 className='text-xl md:text-2xl font-semibold'>{member.name}</h4>
                                     <p className='text-blue-500 font-semibold'>{member.title}</p>
-                                    <div className="flex justify-center items-center gap-4 bg-blue-500 p-4 text-2xl text-white rounded-full mt-4 w-32 mx-auto">
+                                    <div className="flex justify-center items-center gap-4 bg-blue-500 p-2 md:p-4 text-xl md:text-2xl text-white rounded-full mt-2 md:mt-4 w-24 md:w-32 mx-auto">
                                         <Link href={member.twitter} target="_blank" rel="noreferrer" className='transition hover:text-black'>
                                             <FaTwitter />
                                         </Link>
@@ -114,7 +114,6 @@ const TeamSection = () => {
                     })}
                 </div>
             </div>
-
         </div>
     )
 }
