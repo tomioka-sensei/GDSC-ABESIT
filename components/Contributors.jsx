@@ -35,7 +35,7 @@ function Contributors() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5"
+              className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4"
             >
               {ContributorData &&
                 ContributorData.slice(0, LoadMoreValue).map((member) => {
@@ -81,7 +81,7 @@ function Contributors() {
                 })}
             </motion.div>
           </div>
-          <div className="flex justify-center items-center text-black  box-border lg:pb-20 md:pb-24 pb-16">
+          <div className="flex justify-center items-center text-black box-border lg:pb-20 md:pb-24 pb-16">
             <button
               className={`mb-2 font-semibold leading-5 text-blue-500 bg-blue-100 w-fit p-3 rounded hover:bg-gray-500 hover:text-white transition-colors duration-500 ease-in-out ${
                 LoadMoreValue === 40 && ` opacity-50 cursor-not-allowed`
