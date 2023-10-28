@@ -6,7 +6,7 @@ function Contributors() {
   //   Contribute here guys!! Idhar udhar mat nikal jaana (ㆆ_ㆆ)
 
 
-  const [LoadMoreValue, setLoadMoreValue] = useState(10);
+  const [LoadMoreValue, setLoadMoreValue] = useState(8);
   // Do not touch this return function guys!(ㆆ_ㆆ)
   // Bahaut mehnat se banaya hai yaar. Upar jaao wapis （*＾-＾*）
   console.log(ContributorData.length, LoadMoreValue);
@@ -88,7 +88,7 @@ function Contributors() {
               }`}
               onClick={() => {
                 if (LoadMoreValue < 40) {
-                  setLoadMoreValue(LoadMoreValue + 10);
+                  setLoadMoreValue(LoadMoreValue + 8);
                 }
               }}
             >
