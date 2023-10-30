@@ -12,13 +12,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-20 bg-opacity-90 bg-white backdrop-blur-sm shadow-md text-black">
+    <nav className="fixed top-0 left-0 right-0 z-20 bg-opacity-90 bg-gray-100 backdrop-blur-sm shadow-md text-black">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between py-1 h-14 sm:h-20">
           <Link href="/" class="transform scale-50 sm:scale-75">
             <div className="flex items-center">
-              <Image src={gdsclogo} alt="logo" width={130}/>
-              <h1 className="text-4xl font-bold text-gray-800 hidden sm:block p-4">ABESIT </h1>
+              <Image src={gdsclogo} alt="logo" width={130} />
+              <h1 className="text-4xl font-bold text-gray-800 hidden sm:block p-4">
+                ABESIT{" "}
+              </h1>
             </div>
           </Link>
 
@@ -63,19 +65,19 @@ const Navbar = () => {
           </div>
 
           <ul className="md:flex md:items-center md:gap-8 text-base font-medium md:ml-4 hidden">
-            <li className="button hover:scale-105">
+            <li className="button hover:scale-105 transition">
               <Link href="/">Home</Link>
             </li>
-            <li className="button hover:scale-105">
+            <li className="button hover:scale-105 transition">
               <Link href="/">Event</Link>
             </li>
-            <li className="button hover:scale-105">
+            <li className="button hover:scale-105 transition">
               <Link href="/">Project</Link>
             </li>
-            <li className="button hover:scale-105">
+            <li className="button hover:scale-105 transition">
               <Link href="/team">Team</Link>
             </li>
-            <li className="button hover:scale-105">
+            <li className="button hover:scale-105 transition">
               <Link href="/Contributors">Contributors</Link>
             </li>
           </ul>

@@ -13,7 +13,7 @@ function Contributors() {
   console.log(ContributorData.length, LoadMoreValue);
   return (
     <div className="bg-white w-full py-16 md:py-6">
-       <ProgressBar />
+     
       <section className="container px-6 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
