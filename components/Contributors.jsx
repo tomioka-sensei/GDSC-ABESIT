@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import { ContributorData } from "@/ContributorData/contributorData";
+import ProgressBar from "./ProgressBar";
 function Contributors() {
-  //   Contribute here guys!! Idhar udhar mat nikal jaana (ㆆ_ㆆ)
+//   Contribute here guys!! Idhar udhar mat nikal jaana (ㆆ_ㆆ)
 
 
   const [LoadMoreValue, setLoadMoreValue] = useState(8);
@@ -12,6 +13,7 @@ function Contributors() {
   console.log(ContributorData.length, LoadMoreValue);
   return (
     <div className="bg-white w-full py-16 md:py-6">
+       <ProgressBar />
       <section className="container px-6 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
