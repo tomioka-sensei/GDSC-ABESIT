@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FaTwitter, FaGithub } from 'react-icons/fa'
 import { Montserrat } from 'next/font/google'
+import ProgressBar from './ProgressBar'
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -85,6 +86,7 @@ const teamData = [
 const TeamSection = () => {
     return (
         <div id="team" className={`bg-white text-black w-full text-center ${montserrat.className}`}>
+            <ProgressBar/>
             <div className='w-4/5 mx-auto'>
                 <h2 className="text-3xl md:text-4xl font-bold mt-6">Team Member</h2>
                 <p className="text-base text-gray-700 md:text-lg w-3/4 mx-auto my-6">
