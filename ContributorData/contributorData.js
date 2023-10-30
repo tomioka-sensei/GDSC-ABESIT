@@ -327,4 +327,14 @@ export const  ContributorData = [
         social2: "",
         desc: "web developer",
       },
+
+        {
+        id: 2202901540128,
+        name: "Rashmi",
+        img: "https://avatars.githubusercontent.com/u/118280805?v=4",
+        role: "Contributor",
+        social1: "https://github.com/RashK19",
+        social2: "https://in.linkedin.com/in/rashmi-146001237",
+        desc: "A beginner in the world of tech with full of enthusiasm",
+      },
 ]
