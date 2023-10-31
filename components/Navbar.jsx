@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import LOGO from "@/assets/GDSC-ABES-LOGO.png";
 import Link from "next/link";
-import gdsclogo from "@/assets/Logo.png";
+import gdsclogo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

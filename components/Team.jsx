@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { FaTwitter, FaGithub } from 'react-icons/fa'
 import { Montserrat } from 'next/font/google'
 import ProgressBar from './ProgressBar'
+import Image from 'next/image'
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -97,7 +98,7 @@ const TeamSection = () => {
                         return (
                             <div key={member.id} className="flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8">
                                 <div>
-                                    <img className='rounded-full border-4 border-yellow-400 aspect-square' src={member.img} alt={member.name} width={175} />
+                                    <img className='rounded-full border-4 border-yellow-400 aspect-square' src={member.img} alt={member.name} width={175} height={175} />
                                 </div>
                                 <div className="mt-2 md:mt-4"> {/* Add margin for spacing */}
                                     <h4 className='text-xl md:text-2xl font-semibold'>{member.name}</h4>

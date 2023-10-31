@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "@/assets/image1.jpg";
+import image1 from "../assets/image1.jpg";
 
 const Contact = () => {
   return (

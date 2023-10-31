@@ -28,8 +28,8 @@ function Contributors() {
                 <span className="text-yellow-500">Contributors</span>
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                The list of people who've successfully contributed with this
-                hands-on workshop. Get your name on GDSC's website too!
+                The list of people who&apos;ve successfully contributed with this
+                hands-on workshop. Get your name on GDSC&apos;s website too!
               </p>
             </div>
             <motion.div
