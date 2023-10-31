@@ -39,11 +39,11 @@ function About() {
       >
         <motion.div variants={item} className="max-w-xl pr-16 mx-auto mb-10">
           <h5 className="mb-6 text-3xl font-extrabold leading-none">
-            GDSC ABESIT is inspired by Google's Developer Family.
+            GDSC ABESIT is inspired by Google&apos;s Developer Family.
           </h5>
           <p className="mb-6 text-gray-900">
             Our goal is to build an ecosystem of developers in and around the
-            campus, and have fun while we're all at it!
+            campus, and have fun while we&apos;re all at it!
           </p>
           <motion.div variants={item} className="flex items-center">
             <SocialIcon
