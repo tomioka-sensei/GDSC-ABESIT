@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 import Image from 'next/image'
-import image2 from '@/assets/image2.png'
 import Head from 'next/head'
 import PreviousEvents from '@/components/PreviousEvents'
 import About from '@/components/About'
@@ -25,7 +24,6 @@ export default function Home() {
         {/* Other components */}
         <About />
         <PreviousEvents />
-        <Image src={image2} />
         <Contact />
         <Footer />
       </main>
