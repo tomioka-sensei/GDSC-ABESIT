@@ -3,7 +3,7 @@ import image1 from "@/assets/image1.jpg";
 
 const Contact = () => {
   return (
-    <div className="bg-white text-black w-full py-24">
+    <div className="text-black w-full py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-3/4 mx-auto">
         <div className="flex flex-col justify-around bg-slate-200 p-4 rounded-3xl">
           <h2 className="font-bold text-3xl text-center mb-4">Contact Us</h2>

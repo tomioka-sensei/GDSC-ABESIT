@@ -8,7 +8,7 @@ const Footer = () => {
     const year = date.getFullYear()
 
     return (
-        <footer className="bg-slate-100 text-gray-800 p-6 w-full">
+        <footer className="bg-slate-100 border-t-4 text-gray-800 p-6 w-full">
             <div className='mx-auto p-4 sm:p-6 lg:p-8'>
                 <div className='text-center sm:text-left'>
                     <p className='text-xs font-semibold'>Keep In Touch</p>
