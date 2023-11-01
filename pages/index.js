@@ -7,6 +7,7 @@ import Head from 'next/head'
 import PreviousEvents from '../components/PreviousEvents'
 import About from '../components/About'
 import ProgressBar from '../components/ProgressBar'
+import { Children } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,6 @@ export default function Home() {
       <main className={`flex flex-col overflow-hidden bg-gradient-to-tr from-neutral-100 to-stone-100 items-center justify-between ${inter.className}`}>
         <Navbar />
         <Hero />
-        {/* Other components */}
         <About />
         <PreviousEvents />
         <Contact />
