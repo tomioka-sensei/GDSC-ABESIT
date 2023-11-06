@@ -7,7 +7,7 @@ import Head from 'next/head'
 import PreviousEvents from '../components/PreviousEvents'
 import About from '../components/About'
 import ProgressBar from '../components/ProgressBar'
-import { Children } from 'react'
+import StatisticsSimple from '@/components/Statictics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,11 +18,11 @@ export default function Home() {
         <title>GDSC ABESIT</title>
       </Head>
       <ProgressBar />
-      <main className={`flex flex-col overflow-hidden bg-gradient-to-tr from-neutral-100 to-stone-100 items-center justify-between ${inter.className}`}>
-        <Navbar />
+      <Navbar />
+      <main className={`overflow-hidden bg-[#FAFAFA] ${inter.className}`}>
+       
         <Hero />
         <About />
-        <PreviousEvents />
         <Contact />
         <Footer />
       </main>
