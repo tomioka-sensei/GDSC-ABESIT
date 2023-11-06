@@ -23,7 +23,6 @@ export default function Home() {
        
         <Hero />
         <About />
-        <StatisticsSimple/>
         <Contact />
         <Footer />
       </main>

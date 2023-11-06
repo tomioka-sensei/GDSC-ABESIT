@@ -18,7 +18,7 @@ const index = () => {
             </h1>
 
             <p class="max-w-4xl mt-6 text-center text-gray-500">
-              This year's Study jams were a blast! And as we come to its end, we'd like to thank everyone who participated in it and made it a success.   
+              This year&apos;s Study jams were a blast! And as we come to its end, we&apos;d like to thank everyone who participated in it and made it a success.   
             </p>
           </div>
         </section>

@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Head from "next/head";
+import Image from "next/image";
+import Illustration from "../assets/NotFound.jpg";
 
 export default function Custom404() {
   return (
@@ -21,7 +23,7 @@ export default function Custom404() {
                 Page not found
               </h1>
               <p className="mt-4 text-gray-500">
-                Sorry, the page you are looking for doesn&apos;t exist. Here's
+                Sorry, the page you are looking for doesn&apos;t exist. Here&apos;s
                 what you can do meanwhile:
               </p>
 
@@ -44,11 +46,11 @@ export default function Custom404() {
             </div>
 
             <div className="relative w-full mt-12 lg:w-1/2 lg:mt-0">
-              <img
+              <Image
                 className="w-full max-w-lg lg:mx-auto"
-                src="/images/components/illustration.svg"
+                src={Illustration}
                 alt=""
-              ></img>
+              ></Image>
             </div>
           </div>
         </section>
