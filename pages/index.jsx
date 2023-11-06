@@ -7,7 +7,7 @@ import Head from 'next/head'
 import PreviousEvents from '../components/PreviousEvents'
 import About from '../components/About'
 import ProgressBar from '../components/ProgressBar'
-import { Children } from 'react'
+import StatisticsSimple from '@/components/Statictics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +23,7 @@ export default function Home() {
        
         <Hero />
         <About />
-        <PreviousEvents />
+        <StatisticsSimple/>
         <Contact />
         <Footer />
       </main>
