@@ -74,7 +74,7 @@ const Navbar = () => {
             {/* Menu items */}
             <ul className="md:flex md:items-center md:gap-8 mx-2 font-light text-sm md:text-xl md:ml-4 hidden">
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2">
-                <Link href="/">Events</Link>
+                <Link href="/events/GCSJ_2023">Events</Link>
               </li>
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2">
                 <Link href="/">Our Mentors</Link>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <Link href="/">Mentors</Link>
               </li>
               <li className="border-b-2 pl-10 py-2">
-                <Link href="/">Event</Link>
+                <Link href="/events/GCSJ_2023">Event</Link>
               </li>
               <li className="border-b-2 pl-10 py-2">
                 <Link href="/">Sponsers</Link>
