@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
-import { ContributorData } from "@/ContributorData/contributorData";
-
+import { ContributorData } from "@/Data/contributorData";
+import ProgressBar from "./ProgressBar";
 function Contributors() {
 //   Contribute here guys!! Idhar udhar mat nikal jaana (ㆆ_ㆆ)
 const [LoadMoreValue, setLoadMoreValue] = useState(8);

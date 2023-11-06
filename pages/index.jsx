@@ -7,6 +7,7 @@ import Head from 'next/head'
 import PreviousEvents from '../components/PreviousEvents'
 import About from '../components/About'
 import ProgressBar from '../components/ProgressBar'
+import { Children } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,6 @@ export default function Home() {
       <main className={`overflow-hidden bg-[#FAFAFA] ${inter.className}`}>
        
         <Hero />
-        {/* Other components */}
         <About />
         <PreviousEvents />
         <Contact />
