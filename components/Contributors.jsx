@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import { ContributorData } from "@/ContributorData/contributorData";
-import ProgressBar from "./ProgressBar";
+
 function Contributors() {
 //   Contribute here guys!! Idhar udhar mat nikal jaana (ㆆ_ㆆ)
-
-
-  const [LoadMoreValue, setLoadMoreValue] = useState(8);
+const [LoadMoreValue, setLoadMoreValue] = useState(8);
   // Do not touch this return function guys!(ㆆ_ㆆ)
   // Bahaut mehnat se banaya hai yaar. Upar jaao wapis （*＾-＾*）
-  console.log(ContributorData.length, LoadMoreValue);
   return (
     <div className="bg-white w-full py-16 md:py-6">
      
@@ -85,9 +82,8 @@ function Contributors() {
           </div>
           <div className="flex justify-center items-center text-black box-border lg:pb-20 md:pb-24 pb-16">
             <button
-              className={`mb-2 font-semibold leading-5 text-blue-500 bg-blue-100 w-fit p-3 rounded hover:bg-gray-500 hover:text-white transition-colors duration-500 ease-in-out ${
-                LoadMoreValue === 40 && ` opacity-50 cursor-not-allowed`
-              }`}
+              className={`mb-2 font-semibold leading-5 text-blue-500 border-2 border-blue-100 w-fit p-3 rounded-md hover:bg-gray-500 hover:text-white transition-colors duration-300 ease-in-out 
+              ${LoadMoreValue === 40 && ` opacity-50 cursor-not-allowed`}`}
               onClick={() => {
                 if (LoadMoreValue < 40) {
                   setLoadMoreValue(LoadMoreValue + 8);

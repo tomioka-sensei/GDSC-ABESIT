@@ -33,13 +33,21 @@ function About() {
     <div className="children px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-black">
       <motion.div
         initial="hidden"
-        viewport={{once: true}}
+        viewport={{ once: true }}
         whileInView="show"
+        variants={variants}
         className="flex flex-col lg:flex-row"
       >
         <motion.div variants={item} className="max-w-xl pr-16 mx-auto mb-10">
           <h5 className="mb-6 text-3xl font-extrabold leading-none">
-            GDSC ABESIT is inspired by Google&apos;s Developer Family.
+            GDSC ABESIT is inspired by <span className="text-blue-500">G</span>
+           
+            <span className="text-red-500">o</span>
+            <span className="text-yellow-500">o</span>
+            <span className="text-blue-500">g</span>
+            <span className="text-emerald-500">l</span>
+            <span className="text-red-500">e</span>
+            &apos;s Developer Family.
           </h5>
           <p className="mb-6 text-gray-900">
             Our goal is to build an ecosystem of developers in and around the

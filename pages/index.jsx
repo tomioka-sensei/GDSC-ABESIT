@@ -17,8 +17,9 @@ export default function Home() {
         <title>GDSC ABESIT</title>
       </Head>
       <ProgressBar />
-      <main className={`flex flex-col overflow-hidden bg-gradient-to-tr from-neutral-100 to-stone-100 items-center justify-between ${inter.className}`}>
-        <Navbar />
+      <Navbar />
+      <main className={`overflow-hidden bg-[#FAFAFA] ${inter.className}`}>
+       
         <Hero />
         {/* Other components */}
         <About />
