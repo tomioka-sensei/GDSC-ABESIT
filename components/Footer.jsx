@@ -12,7 +12,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="relative mt-16 bg-white dark:bg-neutral-900">
+    <div className="relative bottom-0 mt-16 bg-white dark:bg-neutral-900">
       <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-white dark:text-neutral-900"
         preserveAspectRatio="none"
@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 text-gray-700 dark:text-gray-100">
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
-            <a
+            <Link
               href="/"
               aria-label="Go home"
               title="GDSC Logo"
@@ -59,9 +59,9 @@ export default function Footer() {
               <span className="ml-2 text-xl font-bold tracking-wide dark:text-gray-100 uppercase">
                 GDSC ABESIT
               </span>
-            </a>
+            </Link>
             <div className="mt-4 lg:max-w-sm">
-              <p className="text-sm text-gray-300">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 Student driven community to learn and explore everything Google... and beyond!
               </p>
             </div>
@@ -73,28 +73,28 @@ export default function Footer() {
             </p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Meet the Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                    Contributors
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Our Sponsers
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -103,28 +103,28 @@ export default function Footer() {
             <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Past Events
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Upcoming Events
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                    Sitemap
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -135,34 +135,34 @@ export default function Footer() {
             <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                    GDG Noida
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Community Guidelines
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Mail Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-200 sm:flex-row">
+        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-red-400 sm:flex-row">
           <p className="text-sm text-gray-700 dark:text-gray-100">
             © Copyright 2023 GDSC ABES Institute of Technology
           </p>
