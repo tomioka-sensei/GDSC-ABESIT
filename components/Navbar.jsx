@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import gdsclogo from "../assets/GDSC Logo Long.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
   // useState hook to toggle the menu button
@@ -29,6 +30,7 @@ const Navbar = () => {
                 />
               </div>
             </Link>
+            <ThemeButton/>
 
             {/* Menu button for mobile devices */}
             <div className="md:hidden">
@@ -112,6 +114,8 @@ const Navbar = () => {
                 <Link href="/Contributors">Contributors</Link>
               </li>
             </ul>
+            
+            
           </div>
         </div>
       </nav>

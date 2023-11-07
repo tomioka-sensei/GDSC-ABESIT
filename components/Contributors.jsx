@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
-import { ContributorData } from "@/Data/contributorData";
+import { ContributorData } from "@/Common/contributorData";
 
 function Contributors() {
 
