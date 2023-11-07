@@ -8,7 +8,7 @@ function Contributors() {
 const [LoadMoreValue, setLoadMoreValue] = useState(8);
 
   return (
-    <div className="bg-white w-full py-8 md:py-0">
+    <div className="bg-white dark:bg-neutral-950 w-full py-8 md:py-0">
      
       <section className="container px-6 mx-auto">
         <motion.div
@@ -19,11 +19,11 @@ const [LoadMoreValue, setLoadMoreValue] = useState(8);
         >
           <div className="px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-              <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900  sm:text-4xl md:mx-auto">
+              <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
                 Our awesome{" "}
-                <span className="text-yellow-500 tracking-wider">Contributors</span>
+                <span className="text-yellow-400 tracking-wider">Contributors</span>
               </h1>
-              <p className="text-base text-gray-700 md:text-lg text-center">
+              <p className="text-base dark:text-gray-300 text-gray-700 md:text-lg text-center">
                 The list of people who&apos;ve successfully contributed with this
                 hands-on workshop. Get your name on GDSC&apos;s website too!
               </p>
@@ -94,6 +94,7 @@ const [LoadMoreValue, setLoadMoreValue] = useState(8);
           </div>
         </motion.div>
       </section>
+
     </div>
   );
 }

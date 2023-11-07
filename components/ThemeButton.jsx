@@ -16,9 +16,9 @@ const ThemeButton = () => {
       >
        
         {currentTheme === "light" ? (
-          <MoonIcon className="text-black dark:text-black h-8 w-8 transition-all hover:text-blue-400 dark:hover:text-blue-400" />
+          <MoonIcon className="text-white shadow-2xl h-9 w-9 bg-neutral-700 transition-all hover:text-gray-300 border-2 p-1 rounded-full hover:scale-105" />
         ) : (
-          <SunIcon className="text-black dark:text-black h-8 w-8 transition-all hover:text-blue-400 dark:hover:text-blue-400" />
+          <SunIcon className=" dark:text-white shadow-2xl h-9 w-9 bg-neutral-700 transition-all dark:hover:text-yellow-500 border-2 p-1 rounded-full hover:scale-105" />
         )}
       </button>
     </div>
