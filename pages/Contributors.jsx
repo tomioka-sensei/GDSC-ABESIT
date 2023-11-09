@@ -15,7 +15,7 @@ export default function Home() {
         <title>Contributors</title>
       </Head><ProgressBar />
       <main
-        className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
+        className={`flex min-h-screen flex-col bg-white dark:bg-neutral-900 items-center justify-between ${inter.className}`}
       >
 
         <Navbar />

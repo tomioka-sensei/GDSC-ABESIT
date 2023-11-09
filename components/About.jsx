@@ -30,7 +30,7 @@ function About() {
   };
 
   return (
-    <div className="children px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28 text-black">
+    <div className="children px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28 text-black dark:text-gray-100">
       <motion.div
         initial="hidden"
         viewport={{ once: true }}
@@ -49,7 +49,7 @@ function About() {
             <span className="text-red-500">e</span>
             &apos;s Developer Family.
           </h5>
-          <p className="mb-6 text-gray-900">
+          <p className="mb-6 text-gray-900 dark:text-gray-300">
             Our goal is to build an ecosystem of developers in and around the
             campus, and have fun while we&apos;re all at it!
           </p>
@@ -89,7 +89,7 @@ function About() {
             <h6 className="mb-2 font-semibold leading-5 text-yellow-500 bg-yellow-100 w-fit p-1 rounded">
               Seminars
             </h6>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 dark:text-gray-400">
               Stay updated with the latest news and announcements
             </p>
           </motion.div>
@@ -97,7 +97,7 @@ function About() {
             <h6 className="mb-2 font-semibold leading-5 text-blue-500 bg-blue-100 w-fit p-1 rounded">
               Study Jams
             </h6>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 dark:text-gray-400">
               Hands on experience with the community
             </p>
           </motion.div>
@@ -105,7 +105,7 @@ function About() {
             <h6 className="mb-2 font-semibold leading-5 text-red-500 bg-red-100 w-fit p-1 rounded">
               Projects
             </h6>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 dark:text-gray-400">
               Projects with a social impact that help a lot of people
             </p>
           </motion.div>
@@ -113,7 +113,7 @@ function About() {
             <h6 className="mb-2 font-semibold leading-5 text-emerald-500 bg-green-100 w-fit p-1 rounded">
               Hackathons
             </h6>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 dark:text-gray-400">
               Dream. Explore. Build it... together
             </p>
           </motion.div>

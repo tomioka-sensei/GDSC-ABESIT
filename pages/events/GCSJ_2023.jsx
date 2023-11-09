@@ -7,24 +7,24 @@ import StatisticsSimple from "@/components/Statictics";
 
 const index = () => {
   return (
-    <div className="flex flex-col h-fit">
+    <div className="flex flex-col h-fit dark:bg-neutral-950 bg-white">
       <Navbar />
       <div>
         <section className="pb-6">
           <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-            <h1 class="max-w-2xl mx-auto text-4xl font-semibold tracking-tight text-gray-800 xl:text-4xl">
+            <h1 class="max-w-2xl mx-auto text-4xl font-semibold tracking-tight text-gray-800 dark:text-gray-100 xl:text-4xl">
               Review of{" "}
               <span class="text-blue-500">Google Cloud Study Jams</span>
             </h1>
 
-            <p class="max-w-4xl mt-6 text-center text-gray-500">
+            <p class="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
               This year&apos;s Study jams were a blast! And as we come to its end, we&apos;d like to thank everyone who participated in it and made it a success.   
             </p>
           </div>
         </section>
       </div>
       <div className="flex-grow text-black h-fit">
-      <h1 class="max-w-2xl text-center mx-auto text-4xl font-semibold tracking-tight text-gray-800 xl:text-4xl">
+      <h1 class="max-w-2xl text-center mx-auto text-4xl font-semibold tracking-tight dark:text-gray-100 text-gray-800 xl:text-4xl">
               Look at the {" "}
               <span class="text-blue-500">Staticstics</span>!
             </h1>
@@ -32,7 +32,7 @@ const index = () => {
         <div className="md:mx-10">
           <div className="flex justify-end">
             <input
-              className="border border-black rounded-xl p-2 text-sm text-black"
+              className="border border-black rounded-xl p-2 text-sm text-black "
               type="text"
               placeholder="Search"
             />

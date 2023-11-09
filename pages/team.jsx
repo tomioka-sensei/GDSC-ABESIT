@@ -11,7 +11,7 @@ const Team = () => {
                 <title>Team | GDSC ABESIT</title>
             </Head>
             <ProgressBar />
-            <main className="flex flex-col bg-white items-center justify-between">
+            <main className="flex flex-col bg-white dark:bg-neutral-900  items-center justify-between">
                 <Navbar />
                 <div className="pt-24">
                     <TeamSection />

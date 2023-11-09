@@ -17,7 +17,7 @@ function Hero() {
   };
 
   return (
-    <div className="w-full h-1/6">
+    <div className="w-full h-1/6 ">
       <section className="justify-center content-center">
         <div className="flex flex-col mx-auto px-4 py-48 md:py-30 lg:flex lg:items-center text-black dark:text-gray-100">
          
