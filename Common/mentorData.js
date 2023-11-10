@@ -26,7 +26,7 @@ export const  mentorData = [
     {
         id:3,
         name: "Tarun aggarwal",
-        image: "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699611151/tarun_ir1hih.jpg",
+        image: "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699631814/Screenshot_2023-11-10_at_9.25.23_PM_qiaiay.png",
         linkedin: "https://www.linkedin.com/in/ertarunagarwal/",
         instagram: "https://www.instagram.com/tarun_agarwal._/",
         occuparion: "SDE-2 @GoComet"
