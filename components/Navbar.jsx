@@ -19,7 +19,7 @@ const Navbar = () => {
       <Head>
         <title>Google Cloud Study Jams 2023</title>
       </Head>
-      <div className="hidden bg-white dark:bg-neutral-900 md:flex h-8 w-full"></div>
+      {/* <div className="hidden bg-white dark:bg-neutral-900 md:flex h-8 w-full"></div> */}
       <nav className="sticky bg-white dark:bg-neutral-900 top-0 w-full left-0 z-40 backdrop-blur-md dark:bg-opacity-80 bg-opacity-80  text-gray-600 dark:text-gray-100">
         <div className="container max-w-full px-4 md:px-8">
           <div className="flex items-center py-1 h-14 sm:h-20">
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <Link href="/events/GCSJ_2023">Events</Link>
               </li>
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2">
-                <Link href="/">Our Mentors</Link>
+                <Link href="/mentors">Our Mentors</Link>
               </li>
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2">
                 <Link href="/team">Team</Link>
