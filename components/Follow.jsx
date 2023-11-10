@@ -33,7 +33,7 @@ const socialData = [
 
 const Follow = () => {
     return (
-        <div className="bg-white dark:bg-neutral-900 dark:text-white text-black flex justify-around items-center p-6 w-3/4 mx-auto rounded-xl shadow-md">
+        <div className="bg-white dark:bg-neutral-900 dark:text-white text-black flex flex-col md:flex-row gap-8 first-letter:md:flex-row justify-around items-center p-6 w-3/4 mx-auto rounded-xl shadow-md">
             <motion.div
                 initial={{ x: 1000 }}
                 animate={{ x: 0 }}
@@ -48,7 +48,7 @@ const Follow = () => {
                 initial={{ x: -1000 }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1 }}
-                className="flex gap-8"
+                className="flex gap-8 flex-wrap"
             >
                 {socialData.map((item) => {
                     return (
