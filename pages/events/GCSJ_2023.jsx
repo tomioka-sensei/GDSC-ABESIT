@@ -67,12 +67,12 @@ const index = () => {
 
                       <div className="w-full text-center">{data.email}</div>
 
-                      <div className="w-full text-center text-blue-500 hover:text-blue-400 hover:cursor-pointer">
+                      <div className="w-full text-center  hover:text-blue-400 hover:cursor-pointer">
                         Comming Soon
                       </div>
 
-                      <div className="w-full flex justify-center hover:cursor-pointer text-base">
-                        <IoIosArrowDropdown />
+                      <div className="w-full text-center text-blue-500 hover:text-blue-400 hover:cursor-pointer">
+                        <a href={data.url} target="_blank"> Cloud Skill Boost URL</a>
                       </div>
                     </div>
                   );
