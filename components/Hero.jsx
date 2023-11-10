@@ -17,10 +17,10 @@ function Hero() {
   };
 
   return (
-    <div className="w-full h-1/6 ">
+    <div className="w-full h-[39rem] gradient-background">
       <section className="justify-center content-center">
         <div className="flex flex-col mx-auto px-4 py-48 md:py-30 lg:flex lg:items-center text-black dark:text-gray-100">
-         
+
           {/* LOGO */}
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ function Hero() {
           </motion.svg>
           {/* text */}
           <motion.svg
-          className="h-16"
+            className="h-16"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="90 0 1020 68"
             variants={svgVarients}
@@ -177,7 +177,7 @@ function Hero() {
             />
             {/* logo */}
           </motion.svg>
-          <motion.h1 initial={{opacity:0, y:50}} transition={{duration: 1, delay:1}} whileInView={{opacity:1, y:0}} viewport={{once: true}} className="text-black text-center font-semibold uppercase text-xs md:text-md tracking-[10px] md:tracking-[15px]">ABES Institute Of Technology</motion.h1>
+          <motion.h1 initial={{ opacity: 0, y: 50 }} transition={{ duration: 1, delay: 1 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-black text-center font-semibold uppercase text-xs md:text-md tracking-[10px] md:tracking-[15px]">ABES Institute Of Technology</motion.h1>
         </div>
       </section>
     </div>

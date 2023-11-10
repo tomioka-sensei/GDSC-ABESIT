@@ -25,3 +25,21 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.gradient-background {
+    background: linear-gradient(-45deg, #2194ff, #ffffff, #e2a624);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
