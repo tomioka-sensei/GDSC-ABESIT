@@ -47,7 +47,7 @@ const Follow = () => {
                 <h2 className="text-2xl font-semibold tracking-wide relative group max-w-fit"><span>Follow Us</span>
                     <span className="absolute -bottom-1 left-0 w-0 h-1 bg-gray-500 transition-all group-hover:w-full"></span>
                 </h2>
-                <p className="text-sm font-light mt-2">If you don't want to miss any updates ;)</p>
+                <p className="text-sm font-light mt-2">If you don&apos;t want to miss any updates ;)</p>
             </motion.div>
             <motion.div
                 initial="hidden"
