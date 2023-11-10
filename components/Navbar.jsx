@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import gdsclogo from "../assets/GDSC Logo Long.png";
 import ThemeButton from "./ThemeButton";
-import Head from "next/head";
 
 const Navbar = () => {
   // useState hook to toggle the menu button
@@ -19,8 +18,6 @@ const Navbar = () => {
 
       <div className="hidden bg-white dark:bg-neutral-900 md:flex h-8 w-full"></div>
       <nav className="sticky bg-white dark:bg-neutral-900 top-0 w-full left-0 z-40 backdrop-blur-md bg-opacity-80 text-gray-600 dark:text-gray-100">
-
-
         <div className="container max-w-full px-4 md:px-8">
           <div className="flex items-center py-1 h-14 sm:h-20">
             <Link href="/" class="transform scale-75 ">
