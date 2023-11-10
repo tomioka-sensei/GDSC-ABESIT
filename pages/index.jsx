@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 import Head from 'next/head'
 import About from '../components/About'
 import ProgressBar from '../components/ProgressBar'
+import Follow from '@/components/Follow'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,12 +19,13 @@ export default function Home() {
       <ProgressBar />
       <Navbar />
       <main className={`overflow-hidden bg-white dark:bg-neutral-950 ${inter.className}`}>
-       
+
         <Hero />
         <About />
         <Contact />
+        <Follow />
         <Footer />
-        
+
       </main>
     </>
   )
