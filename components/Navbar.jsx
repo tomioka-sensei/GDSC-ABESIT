@@ -16,11 +16,8 @@ const Navbar = () => {
 
   return (
     <>
-      <Head>
-        <title>Google Cloud Study Jams 2023</title>
-      </Head>
       <div className="hidden bg-white dark:bg-neutral-900 md:flex h-8 w-full"></div>
-      <nav className="sticky bg-white dark:bg-neutral-900 top-0 w-full left-0 z-40 backdrop-blur-md dark:bg-opacity-80 bg-opacity-80  text-gray-600 dark:text-gray-100">
+      <nav className="sticky bg-white dark:bg-neutral-900 top-0 w-full left-0 z-40 backdrop-blur-md bg-opacity-80 text-gray-600 dark:text-gray-100">
         <div className="container max-w-full px-4 md:px-8">
           <div className="flex items-center py-1 h-14 sm:h-20">
             <Link href="/" class="transform scale-75 ">
@@ -96,9 +93,8 @@ const Navbar = () => {
 
             {/* mobile menu items */}
             <ul
-              className={`${
-                isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
-              } absolute top-full text-left left-0 right-0 md:hidden transition-all duration-300 transform origin-top ease-in-out bg-white bg-opacity-90`}
+              className={`${isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+                } absolute top-full text-left left-0 right-0 md:hidden transition-all duration-300 transform origin-top ease-in-out bg-white bg-opacity-90`}
             >
               <li className="border-y-2 pl-10 py-2">
                 <Link href="/">Mentors</Link>
