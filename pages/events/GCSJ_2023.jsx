@@ -33,7 +33,7 @@ const GCSJ_2023 = () => {
               </h1>
 
               <p class="max-w-4xl mt-6 text-center text-gray-500">
-                This year&apos;s Study jams were a blast! And as we come to its end, we&apos;d like to thank everyone who participated in it and made it a success.
+                This year&apos;s Cloud Study jams were a blast! And as we come to its end, we&apos;d like to thank everyone who participated in it and made it a success.
               </p>
             </div>
           </section>
@@ -93,10 +93,10 @@ const GCSJ_2023 = () => {
                           {data.email}
                         </td>
                         <td class="px-6 py-4">
-                          Download Certificate
+                        <a href={data.certificate} target="_blank" className="text-blue-600 font-bold" > Download </a>
                         </td>
                         <td class="px-6 py-4">
-                          <a href={data.url} className="text-blue-600 font-bold" > Click Here </a>
+                          <a href={data.url} className="text-blue-300" > Click Here </a>
                         </td>
                       </tr>
                     );
