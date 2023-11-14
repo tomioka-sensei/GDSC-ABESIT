@@ -15,28 +15,32 @@ const events = () => {
             </div>
 
             <div>
-                <div className='text-4xl font-bold text-center my-5'>
-                    Our Past Events
+                <div className=' flexmy-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:my-10'>
+                    <div className='text-5xl'>
+                        Our Past Events
+                    </div>
+
+                    <div className='text-gray-400 text-lg'>
+                        we conducted various events, sessions this year, some of them are...
+                    </div>
                 </div>
                 <div className=' mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 grid grid-cols-3 gap-8'>
                     {PastEvents.map((event) => (
-                        <div key={event.id} className='bg-gray-200 p-2 rounded-2xl'>
+                        <div key={event.id} className=' border-[1px] border-gray-300 w-fit p-1 rounded-[2rem]'>
                             <div>
-                                <img src='https://res.cloudinary.com/dmutgbmtd/image/upload/v1699954425/image_4_b9q9gg.png' alt='err' />
+                                <img src={event.img} alt='err' />
                             </div>
 
-                            <div className='my-5 text-black'>
-                                <div className='bg-red-300 inline-flex p-1 rounded-lg mb-3'>
-                                    HandsOn Workshop
-                                </div>
-                                <div className='font-bold text-2xl'>
+                            <div className='my-5 text-black px-2'>
+                                
+                                <div className='font-medium text-xl '>
                                     {event.title}
                                 </div>
-                                <div className='text-sm'>
+                                <div className='text-xs'>
                                     {event.date}
                                 </div>
 
-                                <div className='text-gray-500 text-sm mt-5'>
+                                <div className='text-gray-500 text-xs my-2'>
                                     {event.description}
                                 </div>
 
@@ -44,8 +48,8 @@ const events = () => {
                                     {
                                         event.link ? (
                                             <Link className=' text-white bg-black rounded-xl flex justify-center items-center h-10 mt-5 hover:cursor-pointer' href={event.link}> Know More </Link>
-                                        ) : (<div className=' text-black bg-gray-300 rounded-xl flex justify-center items-center h-10 mt-5'>
-                                            Coming soon
+                                        ) : (<div className=' text-gray-500 bg-gray-300 rounded-xl flex justify-center items-center h-10 mt-5'>
+                                            More Info Coming soon
                                         </div>)
                                     }
                                 </div>

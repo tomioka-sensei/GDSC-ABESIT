@@ -14,7 +14,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-between my-10 md:flex-row flex-col">
+      <div className="flex justify-between my-10 md:flex-row flex-col ">
         <div className="bg-[#EA4335] text-white px-3 w-28 justify-center py-2 flex items-center rounded-full border-[1px] hover:border-gray-400 hover:cursor-pointer">
           <Link href={'https://www.instagram.com/gdscabesit'} target="_blank"> Instagram </Link>
         </div>

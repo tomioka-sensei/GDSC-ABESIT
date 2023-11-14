@@ -74,7 +74,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
-                    href="/"
+                    href="/team"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Meet the Team
@@ -82,7 +82,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/Contributors"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Contributors
@@ -104,7 +104,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
-                    href="/"
+                    href="/events"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Past Events
@@ -136,7 +136,7 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
-                    href="/"
+                    href="https://gdg.community.dev/gdg-noida/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     GDG Noida
@@ -144,7 +144,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/guidelines"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Community Guidelines
@@ -152,7 +152,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="mailto:dsc.abesit@gmail.com"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
                     Mail Us
