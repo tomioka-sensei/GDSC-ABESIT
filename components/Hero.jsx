@@ -61,7 +61,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-5 md:visible md:bg-black">
+      <div className="flex justify-center mt-5 md:visible">
         <div class="scroll-downs">
           <div class="mousey">
             <div class="scroller"></div>
