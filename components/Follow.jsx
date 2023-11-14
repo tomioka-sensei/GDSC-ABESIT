@@ -32,7 +32,7 @@ const socialData = [
 
 const Follow = () => {
     return (
-        <div className="bg-white text-black flex flex-col md:flex-row gap-8 first-letter:md:flex-row justify-around items-center p-6 w-3/4 mx-auto rounded-xl shadow-md">
+        <div className="bg-[#FAFAFA] dark:bg-neutral-900 dark:text-gray-100 text-black flex flex-col md:flex-row gap-8 first-letter:md:flex-row justify-around items-center p-6 w-3/4 mx-auto rounded-xl shadow-md">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -53,7 +53,7 @@ const Follow = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
                 variants={{
                     visible: { opacity: 1, x: 0 },
                     hidden: { opacity: 0, x: -1000 }
@@ -67,7 +67,7 @@ const Follow = () => {
                             key={item.id}
                             href={item.link}
                             target="_blank"
-                            className="transition outline outline-1 shadow-lg hover:shadow-red-400 p-2.5 rounded-full"
+                            className="transition outline contrast-0 hover:contrast-100 outline-1 shadow-lg hover:shadow-red-400 p-2.5 rounded-full"
                             whileHover={{ y: -5 }}
                             transition={{ duration: 0.1 }}
                         >

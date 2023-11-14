@@ -116,4 +116,3 @@ const GCSJ_2023 = () => {
 };
 
 export default GCSJ_2023;
-
