@@ -7,7 +7,7 @@ import StatisticsSimple from "@/components/Statictics";
 import Link from "next/link";
 import { useState } from "react";
 
-const index = () => {
+const GCSJ_2023 = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearchInputChange = (e) => {
@@ -110,5 +110,5 @@ const index = () => {
   );
 };
 
-export default index;
+export default GCSJ_2023;
 
