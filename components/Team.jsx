@@ -89,7 +89,7 @@ const TeamSection = () => {
         <div id="team" className={`bg-white text-black w-full text-center ${montserrat.className}`}>
     
             <div className='w-4/5 mx-auto'>
-                <h2 className="text-3xl md:text-4xl font-bold mt-6">Team Member</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mt-6">Team Members</h2>
                 <p className="text-base text-gray-700 md:text-lg w-3/4 mx-auto my-6">
                     The list of people who are working to make this community amazing & welcoming.
                 </p>

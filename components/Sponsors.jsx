@@ -1,12 +1,10 @@
 import React from 'react'
 
 const Sponsors = () => {
-
-
     return (
         <div className='w-full md:h-[25rem] px-10 md:px-28 md:mt-20'>
             <div className='space-y-3 text-center'>
-                <div className='text-5xl font-semibold'>
+                <div className='text-5xl font-semibold text-gray-800'>
                     Our Current & Past Sponsors
                 </div>
                 <div className='text-gray-500'>
