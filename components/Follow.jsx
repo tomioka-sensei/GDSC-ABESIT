@@ -32,7 +32,7 @@ const socialData = [
 
 const Follow = () => {
     return (
-        <div className="bg-white dark:bg-neutral-900 dark:text-white text-black flex flex-col md:flex-row gap-8 first-letter:md:flex-row justify-around items-center p-6 w-3/4 mx-auto rounded-xl shadow-md">
+        <div className="bg-white text-black flex flex-col md:flex-row gap-8 first-letter:md:flex-row justify-around items-center p-6 w-3/4 mx-auto rounded-xl shadow-md">
             <motion.div
                 initial="hidden"
                 whileInView="visible"

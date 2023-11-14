@@ -2,10 +2,14 @@ import Navbar from '@/components/Navbar'
 import React from 'react'
 import { PastEvents } from '@/Common/PastEvents'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const events = () => {
     return (
         <>
+            <Head>
+                <title>GDSC ABESIT | Events</title>
+            </Head>
             <div>
                 <Navbar />
             </div>
