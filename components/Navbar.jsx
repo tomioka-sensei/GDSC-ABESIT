@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import gdsclogo from "../assets/GDSC Logo Long.png";
+import gdsclogoDark from "../assets/GDSC Logo Long Dark.png";
 import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
             <Link href="/" class="transform scale-75 ">
               <div className="flex items-center">
                 <Image
-                  src={gdsclogo}
+                  src={gdsclogoDark}
                   alt="logo"
                   width={630}
                   className="left-0"
@@ -75,7 +75,7 @@ const Navbar = () => {
             {/* Menu items */}
             <ul className="md:flex md:items-center md:gap-8 mx-2 font-light text-sm md:text-xl md:ml-4 hidden">
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
-                <Link href="/events/GCSJ_2023">Events</Link>
+                <Link href="/events/Events">Events</Link>
               </li>
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
                 <Link href="/">Our Mentors</Link>

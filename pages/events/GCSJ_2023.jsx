@@ -1,11 +1,10 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
-import { IoIosArrowDropdown } from "react-icons/io";
 import { gcsj_data } from "@/Common/gcsj";
 import StatisticsSimple from "@/components/Statictics";
 
-const index = () => {
+const GCSJ_2023 = () => {
   return (
     <div className="flex flex-col h-fit dark:bg-neutral-950 bg-white">
       <Navbar />
@@ -88,7 +87,7 @@ const index = () => {
   );
 };
 
-export default index;
+export default GCSJ_2023;
 
 
 {/* <section class="container p-6 px-4 mx-auto">
