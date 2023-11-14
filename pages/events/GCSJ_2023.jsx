@@ -7,6 +7,7 @@ import { useState } from "react";
 import Head from "next/head";
 
 const GCSJ_2023 = () => {
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearchInputChange = (e) => {
     setSearchQuery(e.target.value);

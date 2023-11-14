@@ -74,7 +74,7 @@ const Navbar = () => {
             {/* Menu items */}
             <ul className="md:flex md:items-center md:gap-8 mx-2 font-light text-sm md:text-xl md:ml-4 hidden">
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
-                <Link href="/events/Events">Events</Link>
+                <Link href="/events">Events</Link>
               </li>
               <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
                 <Link href="/mentors">Our Mentors</Link>
