@@ -8,6 +8,7 @@ import About from '../components/About'
 import ProgressBar from '../components/ProgressBar'
 import Follow from '@/components/Follow'
 import Events from '@/components/Events'
+import Sponsors from '@/components/Sponsors'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,7 @@ export default function Home() {
 
         <Hero />
         <About />
-        <Events />
+        <Sponsors/>
         <Contact />
         <Follow />
         <Footer />
