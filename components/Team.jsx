@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { FaTwitter, FaGithub } from 'react-icons/fa'
 import { Montserrat } from 'next/font/google'
 import ProgressBar from './ProgressBar'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { SocialIcon } from 'react-social-icons'
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -15,7 +16,7 @@ const teamData = [
         name: 'Keshav Malik',
         img: 'https://res.cloudinary.com/dkgwk8ey5/image/upload/v1696613754/1689511880357_amgrmn.jpg',
         title: 'Lead',
-        twitter: 'https://twitter.com/_keshav_malik',
+        twitter: 'https://x.com/_keshav_malik',
         github: 'https://github.com/keshav-0907',
     },
     {
@@ -23,7 +24,7 @@ const teamData = [
         name: 'Ishaan',
         img: 'https://avatars.githubusercontent.com/u/113186458?v=4',
         title: 'Open Source',
-        twitter: 'https://twitter.com/Ishaan2053',
+        twitter: 'https://x.com/Ishaan2053',
         github: 'https://github.com/Ishaan2053',
     },
     {
@@ -31,7 +32,7 @@ const teamData = [
         name: 'Chirag Ramesh Chandra',
         img: 'https://media.licdn.com/dms/image/D4D03AQF3Rrlg-Uls1w/profile-displayphoto-shrink_400_400/0/1692046813033?e=1701907200&v=beta&t=Ad_JDZC_bVD4Th-MMQrcnVswbasn5vrsOiXobar6yd4',
         title: 'App Development',
-        twitter: 'https://twitter.com/chiragchandra25',
+        twitter: 'https://x.com/chiragchandra25',
         github: 'https://github.com/Chiragramesh25',
     },
     {
@@ -39,7 +40,7 @@ const teamData = [
         name: 'Aditya Srivasatava',
         img: 'https://github.com/IronicDeGawd.png',
         title: 'App Development',
-        twitter: 'https://twitter.com/0xironyAditya',
+        twitter: 'https://x.com/0xironyAditya',
         github: 'https://github.com/IronicDeGawd',
     },
     {
@@ -47,7 +48,7 @@ const teamData = [
         name: 'Pranav Tripathi',
         img: 'https://github.com/prnvtripathi.png',
         title: 'Web Development',
-        twitter: 'https://twitter.com/prnvtwts',
+        twitter: 'https://x.com/prnvtwts',
         github: 'https://github.com/prnvtripathi',
     },
     {
@@ -63,7 +64,7 @@ const teamData = [
         name: 'Ishita Malik',
         img: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/ishita_malik_kJ8lz6J.jpg',
         title: 'Design',
-        twitter: 'https://twitter.com/malikishita805',
+        twitter: 'https://x.com/malikishita805',
         github: 'https://github.com/ishita8839',
     },
     {
@@ -71,7 +72,7 @@ const teamData = [
         name: 'Himanshu Chhatwal',
         img: 'https://github.com/himanshu1221.png',
         title: 'Outreach & Sponsorship',
-        twitter: 'https://twitter.com/himanshuchhatw2',
+        twitter: 'https://x.com/himanshuchhatw2',
         github: 'https://github.com/himanshu1221',
     },
     {
@@ -82,41 +83,107 @@ const teamData = [
         twitter: 'https://x.com/t_prateek23',
         github: 'https://github.com/tomioka-sensei',
     },
+    {
+        id: 10,
+        name: 'Ankur Chauhan',
+        img: "https://github.com/gdsc-abesit/GDSC-ABESIT/assets/111558974/33aa576b-d239-49b5-899b-5a23ad0a60d6",
+        title: 'Design',
+        twitter: 'https://x.com/',
+        github: "https://github.com"
+    },
+    {
+        id: 11,
+        name: 'Harsh Pal',
+        img: "https://github.com/gdsc-abesit/GDSC-ABESIT/assets/111558974/3ede8eb9-682d-496d-8a7e-bd353de5351c",
+        title: 'Design',
+        twitter: 'https://x.com/Choley_Bhature',
+        github: "https://github.com"
+    },
+    {
+        id: 12,
+        name: 'Kumar Kartikey',
+        img: "https://github.com/gdsc-abesit/GDSC-ABESIT/assets/111558974/e824069e-9ddd-4e95-8d06-19cb696c4261",
+        title: 'Design',
+        twitter: 'https://x.com/',
+        github: "https://github.com"
+    },
+    {
+        id: 13,
+        name: 'Arjun Dhawan',
+        img: "https://github.com/gdsc-abesit/GDSC-ABESIT/assets/111558974/163a9fd4-6a73-4ac2-ad3d-88df7448ef74",
+        title: 'Social Media',
+        twitter: 'https://x.com/',
+        github: "https://github.com"
+    }
 ]
 
 const TeamSection = () => {
     return (
         <div id="team" className={`bg-white text-black w-full text-center ${montserrat.className}`}>
-    
-            <div className='w-4/5 mx-auto'>
-                <h2 className="text-3xl md:text-4xl font-bold mt-6">Team Members</h2>
-                <p className="text-base text-gray-700 md:text-lg w-3/4 mx-auto my-6">
-                    The list of people who are working to make this community amazing & welcoming.
-                </p>
-                <div className='flex flex-wrap justify-center items-stretch mt-12'>
-                    {teamData && teamData.map((member) => {
-                        return (
-                            <div key={member.id} className="flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8">
-                                <div>
-                                    <img className='rounded-full border-4 border-yellow-400 aspect-square' src={member.img} alt={member.name} width={175} height={175} />
-                                </div>
-                                <div className="mt-2 md:mt-4"> {/* Add margin for spacing */}
-                                    <h4 className='text-xl md:text-2xl font-semibold'>{member.name}</h4>
-                                    <p className='text-blue-500 font-semibold'>{member.title}</p>
-                                    <div className="flex justify-center items-center gap-4 bg-blue-500 p-2 md:p-4 text-xl md:text-2xl text-white rounded-full mt-2 md:mt-4 w-24 md:w-32 mx-auto">
-                                        <Link href={member.twitter} target="_blank" rel="noreferrer" className='transition hover:text-black'>
-                                            <FaTwitter />
-                                        </Link>
-                                        <Link href={member.github} target="_blank" rel="noreferrer" className='transition hover:text-black'>
-                                            <FaGithub />
-                                        </Link>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+            >
+                <div className="px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+                    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                        <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
+                            Our {" "}
+                            <span className="text-yellow-400 tracking-wider">Team</span>
+                        </h1>
+                        <p className="text-base dark:text-gray-300 text-gray-700 md:text-lg text-center">
+                            The list of people who are working to make this community amazing & welcoming.
+                        </p>
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        viewport={{ once: true }}
+                        className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4"
+                    >
+                        {teamData &&
+                            teamData.map((member) => {
+                                return (
+                                    <div key={member.id}>
+                                        <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                                            <img
+                                                className="object-cover w-full sm:h-80"
+                                                src={member.img}
+                                                alt={member.name}
+                                            />
+
+                                            <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                                                <p className="mb-1 text-lg font-bold text-gray-100">
+                                                    {member.name}
+                                                </p>
+                                                <p className="mb-4 text-xs text-gray-100">
+                                                    {member.title}
+                                                </p>
+                                                <div className="flex items-center justify-center space-x-3">
+                                                    <SocialIcon
+                                                        url={member.twitter}
+                                                        target="_blank"
+                                                        style={{ height: 35, width: 35 }}
+                                                        bgColor="black"
+                                                    />
+
+                                                    <SocialIcon
+                                                        url={member.github}
+                                                        target="_blank"
+                                                        style={{ height: 35, width: 35 }}
+                                                        bgColor="black"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        )
-                    })}
+                                );
+                            })}
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
