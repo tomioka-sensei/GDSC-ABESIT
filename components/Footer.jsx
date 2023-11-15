@@ -93,7 +93,7 @@ export default function Footer() {
                     href="/"
                     className="transition-colors duration-300 hover:text-red-300"
                   >
-                    Our Sponsers
+                    Our Sponsors
                   </Link>
                 </li>
               </ul>

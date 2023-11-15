@@ -15,7 +15,7 @@ const events = () => {
             </div>
 
             <div>
-                <div className=' flexmy-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:my-10'>
+                <div className='my-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:my-10'>
                     <div className='text-5xl'>
                         Our Past Events
                     </div>
@@ -24,7 +24,7 @@ const events = () => {
                         we conducted various events, sessions this year, some of them are...
                     </div>
                 </div>
-                <div className=' mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 grid grid-cols-3 gap-8'>
+                <div className=' mx-10 md:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 flex flex-wrap gap-8'>
                     {PastEvents.map((event) => (
                         <div key={event.id} className=' border-[1px] border-gray-300 w-fit p-1 rounded-[2rem]'>
                             <div>

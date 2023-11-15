@@ -103,7 +103,7 @@ const Navbar = () => {
                 <Link href="/events">Event</Link>
               </li>
               <li className="border-b-2 pl-10 py-2">
-                <Link href="/">Sponsers</Link>
+                <Link href="/">Sponsors</Link>
               </li>
               <li className="border-b-2 pl-10 py-2">
                 <Link href="/team">Team</Link>
