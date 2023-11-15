@@ -36,15 +36,6 @@ export const  ContributorData = [
         desc: "Can be Painfully Sarcastic sometimes :)",
       },
       {
-        id: 147,
-        name: "Vikash Kumar",
-        img: "https://github.com/Vikash-Rautela/PortfolioF/blob/master/src/assets/imageself.jpeg?raw=true",
-        role: "Contributor",
-        social1: "https://twitter.com/vikash-rautela",
-        social2: "https://github.com/Vikash-Rautela",
-        desc: "Be with your own limitless definetion",
-      },
-      {
         id: 2102901550041,
         name: "Vansh Goel",
         img: "https://github.com/vanshgoel18.png",
