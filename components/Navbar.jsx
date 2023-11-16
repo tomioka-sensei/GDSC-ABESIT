@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import gdsclogoDark from "../assets/GDSC Logo Long Dark.png";
 import ThemeButton from "./ThemeButton";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   // useState hook to toggle the menu button
@@ -13,9 +14,13 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const inactiveLink = "button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal"
+  const activeLink = inactiveLink + " border text-green-500 border-green-500 rounded-full py-1 px-2 font-normal hover:border-green-500"
+  const router = useRouter()
+  const { pathname } = router
+
   return (
     <>
-
       <nav className="sticky bg-white top-0 w-full left-0 z-40 backdrop-blur-md bg-opacity-80 text-gray-600">
         <div className="container max-w-full px-4 md:px-8">
           <div className="flex items-center justify-between py-1 h-14 sm:h-20">
@@ -73,22 +78,22 @@ const Navbar = () => {
 
             {/* Menu items */}
             <ul className="md:flex md:items-center md:gap-8 mx-2 font-light md:ml-4 hidden">
-              <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
+              <li className={pathname.includes('/events') ? activeLink : inactiveLink}>
                 <Link href="/events">Events</Link>
               </li>
-              <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
+              <li className={pathname.includes('/mentors') ? activeLink : inactiveLink}>
                 <Link href="/mentors">Our Mentors</Link>
               </li>
-              <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
+              <li className={pathname.includes('/team') ? activeLink : inactiveLink}>
                 <Link href="/team">Team</Link>
               </li>
-              <li className="button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal">
+              <li className={pathname.includes('/Contributors') ? activeLink : inactiveLink}>
                 <Link href="/Contributors">Contributors</Link>
               </li>
               <li className="button hover:scale-105 transition border text-green-500 border-green-500 rounded-full py-1 px-2 font-normal">
                 <Link href="/">Previous Sponsors</Link>
               </li>
-              
+
             </ul>
 
             {/* mobile menu items */}
@@ -108,7 +113,7 @@ const Navbar = () => {
               <li className="border-b-2 pl-10 py-2">
                 <Link href="/team">Team</Link>
               </li>
-              
+
             </ul>
             {/* <ThemeButton /> */}
           </div>
