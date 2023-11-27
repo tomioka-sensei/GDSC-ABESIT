@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Image
                   src={gdsclogoDark}
                   alt="logo"
-                  width={630}
+                  width={500}
                   className="left-0 p-1"
                 />
               </div>
