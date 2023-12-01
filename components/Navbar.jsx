@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="sticky bg-white top-0 w-full left-0 z-40 backdrop-blur-md bg-opacity-80 text-gray-600">
         <div className="container max-w-full px-4 md:px-8">
           <div className="flex items-center justify-between py-1 h-14 sm:h-20">
-            <Link href="/" class="transform scale-75 ">
+            <Link href="/" className="transform scale-75 ">
               <div className="flex items-center">
                 <Image
                   src={gdsclogoDark}
