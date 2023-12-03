@@ -29,7 +29,7 @@ const AnnouncementBanner = () => {
         >
           <div className="relative flex items-center justify-between gap-4 rounded-lg bg-purple-900 px-4 py-3 text-white shadow-lg">
             <p className="text-sm font-medium">
-              We're organising DevScript 2023! Come{' '}
+              We&apos;re organising DevScript 2023! Come{' '}
               <a href="https://dev-script.tech" className="inline-block underline">
                 check it out!
               </a>
