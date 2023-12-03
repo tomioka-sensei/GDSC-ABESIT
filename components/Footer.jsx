@@ -9,7 +9,6 @@ import {
 import Link from "next/link";
 import React from "react";
 
-
 export default function Footer() {
   return (
     <div className="relative bottom-0 mt-16 bg-gray-100">
@@ -62,13 +61,15 @@ export default function Footer() {
             </Link>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-gray-600">
-                Student driven community to learn and explore everything Google... and beyond!
+                Student driven community to learn and explore everything
+                Google... and beyond!
               </p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
-              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>About Us</span>
+              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit cursor-default">
+                <span>About Us</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span>
               </p>
               <ul className="mt-2 space-y-2">
@@ -99,8 +100,10 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>Useful Links</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
+              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit cursor-default">
+                <span>Useful Links</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span>
+              </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
@@ -129,10 +132,11 @@ export default function Footer() {
               </ul>
             </div>
 
-
             <div>
-              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit"><span>Extras</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span></p>
+              <p className="font-semibold tracking-wide text-red-400 relative group max-w-fit cursor-default">
+                <span>Extras</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-red-500 transition-all group-hover:w-full"></span>
+              </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
