@@ -27,7 +27,7 @@ const AnnouncementBanner = () => {
           transition={{ duration: 0.8, type: 'spring' }}
           className="fixed inset-x-0 bottom-0 p-4"
         >
-          <div className="relative flex items-center justify-between gap-4 rounded-lg bg-emerald-800 px-4 py-3 text-white shadow-lg">
+          <div className="relative flex items-center justify-between gap-4 rounded-lg bg-purple-900 px-4 py-3 text-white shadow-lg">
             <p className="text-sm font-medium">
               We're organising DevScript 2023! Come{' '}
               <a href="https://dev-script.tech" className="inline-block underline">
