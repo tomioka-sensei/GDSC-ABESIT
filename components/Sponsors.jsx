@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Sponsors = () => {
   return (
-    <div className="w-full md:h-[25rem] px-10 md:px-28 md:mt-20">
-      <div className="space-y-3 text-center">
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-22">
+      <div className="flex flex-col text-center">
         <div className="text-5xl font-semibold text-rose-800">Our Sponsors</div>
-        <div className="text-gray-500">
+        <div className="text-gray-500 pt-3 tracking-widest">
           People who have helped us throughout our journey constantly.
         </div>
       </div>
