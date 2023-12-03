@@ -4,6 +4,7 @@ import Link from "next/link";
 import gdsclogoDark from "../assets/GDSC Logo Long Dark.png";
 import ThemeButton from "./ThemeButton";
 import { useRouter } from "next/router";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
   // useState hook to toggle the menu button
@@ -14,10 +15,13 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const inactiveLink = "button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal"
-  const activeLink = inactiveLink + " border text-green-500 border-green-500 rounded-full py-1 px-2 font-normal hover:border-green-500"
-  const router = useRouter()
-  const { pathname } = router
+  const inactiveLink =
+    "button hover:scale-105 transition hover:border hover:border-red-400 rounded-full py-1 px-2 font-normal";
+  const activeLink =
+    inactiveLink +
+    " border text-green-500 border-green-500 rounded-full py-1 px-2 font-normal hover:border-green-500";
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
     <>
@@ -30,6 +34,7 @@ const Navbar = () => {
                   src={gdsclogoDark}
                   alt="logo"
                   width={500}
+                  prefetch={true}
                   className="left-0 p-1"
                 />
               </div>
@@ -43,63 +48,54 @@ const Navbar = () => {
                 aria-label="Toggle Menu"
               >
                 {isOpen ? (
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+                  <XMarkIcon className="h-6 w-6" />
                 ) : (
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
+                  //
+                  <Bars3Icon className="h-6 w-6" />
                 )}
               </button>
             </div>
 
             {/* Menu items */}
             <ul className="md:flex md:items-center md:gap-8 mx-2 font-light md:ml-4 hidden">
-              <li className={pathname.includes('/events') ? activeLink : inactiveLink}>
+              <li
+                className={
+                  pathname.includes("/events") ? activeLink : inactiveLink
+                }
+              >
                 <Link href="/events">Events</Link>
               </li>
-              <li className={pathname.includes('/mentors') ? activeLink : inactiveLink}>
+              <li
+                className={
+                  pathname.includes("/mentors") ? activeLink : inactiveLink
+                }
+              >
                 <Link href="/mentors">Our Mentors</Link>
               </li>
-              <li className={pathname.includes('/team') ? activeLink : inactiveLink}>
+              <li
+                className={
+                  pathname.includes("/team") ? activeLink : inactiveLink
+                }
+              >
                 <Link href="/team">Team</Link>
               </li>
-              <li className={pathname.includes('/Contributors') ? activeLink : inactiveLink}>
+              <li
+                className={
+                  pathname.includes("/Contributors") ? activeLink : inactiveLink
+                }
+              >
                 <Link href="/Contributors">Contributors</Link>
               </li>
               <li className="button hover:scale-105 transition border text-green-500 border-green-500 rounded-full py-1 px-2 font-normal">
                 <Link href="/">Previous Sponsors</Link>
               </li>
-
             </ul>
 
             {/* mobile menu items */}
             <ul
-              className={`${isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
-                } absolute top-full text-left left-0 right-0 md:hidden transition-all duration-300 transform origin-top ease-in-out bg-white bg-opacity-90`}
+              className={`${
+                isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+              } absolute top-full text-left left-0 right-0 md:hidden transition-all duration-300 transform origin-top ease-in-out bg-white bg-opacity-90`}
             >
               <li className="border-y-2 pl-10 py-2">
                 <Link href="/mentors">Mentors</Link>
@@ -113,7 +109,6 @@ const Navbar = () => {
               <li className="border-b-2 pl-10 py-2">
                 <Link href="/team">Team</Link>
               </li>
-
             </ul>
             {/* <ThemeButton /> */}
           </div>

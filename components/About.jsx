@@ -30,7 +30,7 @@ function About() {
   };
 
   return (
-    <div className="children px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28 text-black">
+    <div className="children px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28 text-black">
       <motion.div
         initial="hidden"
         viewport={{ once: true }}
